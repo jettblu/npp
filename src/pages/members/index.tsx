@@ -1,8 +1,7 @@
-import type { NextPage } from "next";
 import { IMember } from "@/members/models";
 import { pgSpring23 } from "@/pg/spring23";
+import type { NextPage } from "next";
 import MemberCard from "../../components/members/MemberCard";
-import toast from "react-hot-toast";
 
 const Members: NextPage = () => {
   const membersToDisplay: IMember[] = pgSpring23;
@@ -18,13 +17,15 @@ const Members: NextPage = () => {
         <div className="min-h-[6vh]"></div>
 
         <div className="mb-8">
-          <h1 className="text-5xl font-bold mb-2">Performing Group</h1>
-          <p className="text-lg text-slate-400 dark:text-slate-300">
-            Your Forbes Ave giggle and guffaw inducers
+          <h1 className="text-4xl md:text-5xl font-bold mb-2 text-black dark:text-white">
+            Performing Group
+          </h1>
+          <p className="text-lg text-gray-500">
+            We're putting the fun back in Forbes.
           </p>
         </div>
 
-        <div className="grid my-6 grid-cols-1 md:grid-cols-3 gap-5 md:gap-10 mx-auto place-items-center">
+        <div className="grid my-6 grid-cols-1 md:grid-cols-3 gap-5 md:gap-10 mx-auto place-items-center bg-gray-100 md:bg-inherit py-2 rounded-md">
           {membersToDisplay.length != 0 &&
             membersToDisplay.map((member: IMember, index: number) => (
               <MemberCard member={member} key={index} />
