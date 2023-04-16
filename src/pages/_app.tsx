@@ -15,9 +15,7 @@ Router.events.on("routeChangeComplete", (as, routeProps) => {
 
 export default function App({ Component, pageProps }: AppProps) {
   useEffect(() => {
-    // load fathom
-    // TODO: FILL IN ID
-    load("", {
+    load("UZDNVPUX", {
       includedDomains: ["www.noparkingplayers.com", "noparkingplayers.COM"],
     });
   }, []);
