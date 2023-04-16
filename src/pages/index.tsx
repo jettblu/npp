@@ -9,10 +9,10 @@ export default function Home() {
   const [clcikCount, setClickCount] = useState(0);
   function onClickLogo() {
     setClickCount(clcikCount + 1);
-    toast(`Hehe ${clcikCount > 1 ? `x${clcikCount}` : ""}`);
+    toast(`Hehe ${clcikCount > 0 ? `x${clcikCount}` : ""}`);
   }
   return (
-    <main className="flex-col pt-4 md:pt-[10vh] space-y-4 max-w-2xl mx-auto mx-auto">
+    <main className="flex-col pt-4 pt-[10vh] space-y-4 max-w-2xl mx-auto mx-auto">
       <div className="">
         <Image
           src={"/brand/logoLight.webp"}
