@@ -20,7 +20,7 @@ const Menu: NextPage<Props> = (props) => {
 
   // change style based on boolean
   const menuWrapperClassName = isMenuMobile
-    ? "flex flex-col md:flex-row md:ml-auto mt-3 md:mt-0 min-h-[80vh] rounded-lg bg-[#F2FBFE] z-10 border-sky-500 border bg-gray-50 py-4 pl-4 dark:bg-black md:min-h-0 text-2xl space-y-2"
+    ? "flex flex-col md:flex-row md:ml-auto mt-3 md:mt-0 min-h-[80vh] rounded-lg bg-[#F2FBFE] z-10 border-gray-500 border bg-gray-50 py-4 pl-4 dark:bg-black md:min-h-0 text-2xl space-y-2"
     : "hidden text-xl md:flex flex-col md:flex-row md:ml-auto mt-3 md:mt-0";
 
   useEffect(() => {
@@ -43,12 +43,16 @@ const Menu: NextPage<Props> = (props) => {
   }, []);
 
   return (
-    <nav className="py-2 md:py-4 mb-4 px-2">
+    <nav
+      className={`py-2 md:py-4 mb-4 -mx-4 md:mx-0 px-2 fixed top-0 w-full ${
+        !isMenuMobile && "bg-white/70 dark:bg-black/70"
+      } ${isMenuMobile && "bg-white dark:bg-black"}`}
+    >
       <div className="md:px-4 mx-auto md:flex md:items-center">
         <div className="flex justify-between items-center hover:cursor-pointer">
           <div onClick={() => setMenuMobile(false)}>
             <Link href="/">
-              <span className="font-extrabold text-3xl text-gray-600 dark:text-gray-300 hover:text-sky-500 transition-colors duration-1500">
+              <span className="font-extrabold text-3xl text-gray-600 dark:text-gray-300 hover:dark:text-white hover:text-black transition-colors duration-1500">
                 NPP
               </span>
             </Link>
