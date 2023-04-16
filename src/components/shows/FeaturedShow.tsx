@@ -17,7 +17,11 @@ const FeaturedShow: NextPage<Props> = (props) => {
         className="flex flex-col md:flex-row"
         onClick={() => handleShowClicked()}
       >
-        <img src={show.photoPath} className="h-64 w-64 object-cover" />
+        <img
+          src={show.photoPath}
+          className="h-64 w-64 object-cover"
+          alt={`${show.name} show poster.`}
+        />
         <div className="flex flex-col space-y-2 mt-2 px-2">
           <div className="flex flex-col">
             <div className="mb-2">

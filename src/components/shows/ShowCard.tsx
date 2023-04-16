@@ -16,7 +16,11 @@ const ShowCard: NextPage<Props> = (props) => {
       className="flex flex-col md:flex-row border p-2 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-900"
       onClick={() => handleShowClicked()}
     >
-      <img src={show.photoPath} className="h-50 w-40 object-cover" />
+      <img
+        src={show.photoPath}
+        className="h-50 w-40 object-cover"
+        alt={`${show.name} show poster.`}
+      />
       <div className="flex flex-col space-y-2 mt-2 px-2">
         <div className="flex flex-col">
           <div className="mb-2">

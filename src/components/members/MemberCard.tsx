@@ -2,6 +2,7 @@ import { NextPage } from "next";
 
 import { IMember } from "@/members/models";
 import PositionBadge from "./PositionBadge";
+import Image from "next/image";
 
 interface Props {
   member: IMember;
@@ -17,7 +18,11 @@ const MemberCard: NextPage<Props> = (props) => {
         className="mx-auto hover:z-10 transition ease-in-out hover:scale-110 border-2 border-gray-600 dark:border-gray-300 rounded-md hover:shadow-lg hover:shadow-gray-500 grayscale hover:grayscale-0"
         onClick={() => handleMemberClicked()}
       >
-        <img src={member.photoPath} className="h-64 object-cover" />
+        <img
+          src={member.photoPath}
+          className="h-64 object-cover"
+          alt={`A fun photo of ${member.name}`}
+        />
         <div className="flex flex-col space-y-2 mt-2 px-2">
           <div className="flex flex-row">
             <p className="my-2 text-lg text-gray-700 dark:text-gray-200 font-semibold">
