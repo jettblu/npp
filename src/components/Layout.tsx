@@ -20,7 +20,7 @@ export default function Layout({ children }: any) {
       <main className={``}>
         <Toaster />
         <Navbar />
-        <div className="" />
+        <div className="h-20" />
         {children}
       </main>
     </div>
