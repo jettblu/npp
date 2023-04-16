@@ -1,3 +1,4 @@
+import VideoPlayer from "@/components/film/VideoPlayer";
 import { IMember } from "@/members/models";
 import { pgSpring23 } from "@/pg/spring23";
 import type { NextPage } from "next";
@@ -22,7 +23,7 @@ const Members: NextPage = () => {
           <div className="text-lg text-gray-500 mb-4">
             <p>Inducing giggles and guffaws since 1996.</p>
           </div>
-          <div className="text-lg text-black dark:text-white">
+          <div className="text-xl text-black dark:text-white">
             <p>
               The No Parking Players are Carnegie Mellon University's premier
               improv comedy troupe.
