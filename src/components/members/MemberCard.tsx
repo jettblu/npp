@@ -1,6 +1,7 @@
 import { NextPage } from "next";
 
 import { IMember } from "@/members/models";
+import PositionBadge from "./PositionBadge";
 
 interface Props {
   member: IMember;
@@ -18,9 +19,14 @@ const MemberCard: NextPage<Props> = (props) => {
       >
         <img src={member.photoPath} className="h-64 object-cover" />
         <div className="flex flex-col space-y-2 mt-2 px-2">
-          <p className="my-2 text-lg text-gray-700 dark:text-gray-200 font-semibold">
-            {member.name}
-          </p>
+          <div className="flex flex-row">
+            <p className="my-2 text-lg text-gray-700 dark:text-gray-200 font-semibold">
+              {member.name}
+            </p>
+            <div className="flex-grow flex flex-row-reverse my-auto">
+              {member.isBoard && <PositionBadge member={member} />}
+            </div>
+          </div>
         </div>
       </div>
     </div>
