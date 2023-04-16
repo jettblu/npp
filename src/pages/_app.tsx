@@ -16,7 +16,7 @@ Router.events.on("routeChangeComplete", (as, routeProps) => {
 export default function App({ Component, pageProps }: AppProps) {
   useEffect(() => {
     load("UZDNVPUX", {
-      includedDomains: ["www.noparkingplayers.com", "noparkingplayers.COM"],
+      includedDomains: ["www.noparkingplayers.com", "noparkingplayers.com"],
     });
   }, []);
   return (
