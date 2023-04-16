@@ -6,6 +6,7 @@ export interface IMember {
   position?: ClubPosition;
   hometown?: string;
   isPg: boolean;
+  isBoard: boolean;
 }
 
 export interface ISocials {
@@ -25,24 +26,22 @@ export enum ClubPosition {
   pg = 6,
 }
 
-export const ClubPositionToUiString = function (
-  position: ClubPosition
-): string {
+export function clubPositionToUiString(position?: ClubPosition): string {
   switch (position) {
     case ClubPosition.president: {
       return "President";
     }
     case ClubPosition.artisticDirector: {
-      return "Artistic Director";
+      return "AD";
     }
     case ClubPosition.treasurer: {
       return "Finance";
     }
     case ClubPosition.social: {
-      return "Social Chair";
+      return "Social";
     }
     case ClubPosition.troupeManager: {
-      return "Troupe Manager";
+      return "Manager";
     }
     case ClubPosition.pg: {
       return "Pg Member";
@@ -51,4 +50,4 @@ export const ClubPositionToUiString = function (
       return "Member";
     }
   }
-};
+}
