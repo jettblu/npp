@@ -15,7 +15,7 @@ const MemberCard: NextPage<Props> = (props) => {
   return (
     <div className="">
       <div
-        className="mx-auto hover:z-10 transition ease-in-out hover:scale-110 border-2 border-gray-600 dark:border-gray-300 rounded-md hover:shadow-lg hover:shadow-gray-500 grayscale hover:grayscale-0"
+        className="mx-auto transition z-0 hover:z-10 ease-in-out hover:scale-110 border-2 border-gray-600 dark:border-gray-300 rounded-md hover:shadow-lg hover:shadow-gray-500 grayscale hover:grayscale-0"
         onClick={() => handleMemberClicked()}
       >
         <img
