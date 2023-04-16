@@ -15,7 +15,7 @@ export const nppShows: IShow[] = [
     photoPath: "/shows/spring23/StephenMagic.jpg",
     description:
       "A magic show like no other, because it's actually an improv show.",
-    date: "2023-04-14",
+    date: "2023-03-24",
     location: "Studio Theater",
     time: "8pm",
   },
