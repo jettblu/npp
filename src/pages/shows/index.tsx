@@ -37,18 +37,29 @@ const Members: NextPage = () => {
             return <ShowCard show={s} key={s.name} />;
           })}
         </div>
-        <div className=" mx-auto mt-10 flex flex-col space-y-4 md:space-y-0 md:flex-row md:space-x-4">
-          <div className="flex-grow">
-            <VideoPlayer
-              videoSrc="https://youtu.be/EnYGBnY17V4"
-              isPlaying={false}
-            />
+        <div className="mt-10 ">
+          <div className="border-t border-l border-r p-2 bg-gray-200 dark:bg-gray-900 rounded-tl-lg rounded-tr-lg">
+            <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100 dark:text-white ">
+              Highlights
+            </h3>
+            <p className="text-lg text-gray-500">
+              Frames from our most recent shows.
+            </p>
           </div>
-          <div className="flex-grow">
-            <VideoPlayer
-              videoSrc="https://www.youtube.com/watch?v=29jch1yiPhA"
-              isPlaying={false}
-            />
+
+          <div className=" mx-auto flex flex-col space-y-8 md:space-y-0 md:flex-row md:space-x-6 rounded-br-lg rounded-bl-lg border bg-gray-200 dark:bg-gray-900">
+            <div className="flex-grow">
+              <VideoPlayer
+                videoSrc="https://youtu.be/EnYGBnY17V4"
+                isPlaying={false}
+              />
+            </div>
+            <div className="flex-grow">
+              <VideoPlayer
+                videoSrc="https://www.youtube.com/watch?v=29jch1yiPhA"
+                isPlaying={false}
+              />
+            </div>
           </div>
         </div>
       </main>
