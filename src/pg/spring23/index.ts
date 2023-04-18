@@ -35,7 +35,7 @@ export const pgSpring23: IMember[] = [
   },
   {
     name: "Stephen Tao",
-    photoPath: "/pg/spring23/stephen.jpg",
+    photoPath: "/pg/spring23/stephen2.jpg",
     position: ClubPosition.pg,
     socials: {},
     isPg: true,
