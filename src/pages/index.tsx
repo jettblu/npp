@@ -12,7 +12,7 @@ export default function Home() {
     toast(`Hehe ${clcikCount > 0 ? `x${clcikCount}` : ""}`);
   }
   return (
-    <main className="flex-col pt-4 pt-[10vh] space-y-4 max-w-2xl mx-auto mx-auto">
+    <main className="flex-col pt-4 pt-[10vh] space-y-4 max-w-2xl mx-auto">
       <div className="">
         <Image
           src={"/brand/logoLight.webp"}
