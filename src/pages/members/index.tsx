@@ -2,6 +2,7 @@ import { IMember } from "@/members/models";
 import { pgSpring23 } from "@/pg/spring23";
 import type { NextPage } from "next";
 import MemberCard from "../../components/members/MemberCard";
+import { PopupButton } from "@typeform/embed-react";
 
 const Members: NextPage = () => {
   const membersToDisplay: IMember[] = pgSpring23;
@@ -30,6 +31,19 @@ const Members: NextPage = () => {
             membersToDisplay.map((member: IMember, index: number) => (
               <MemberCard member={member} key={index} />
             ))}
+        </div>
+        {/* project add form */}
+        <div className="mx-auto">
+          <PopupButton
+            id="KXqyk6L0"
+            size={80}
+            onReady={() => {
+              console.log("Member profile form ready");
+            }}
+            className="font-bold bg-black p-2 rounded-lg text-white dark:text-slate-200 transition ease-in-out hover:scale-105 text-xl mx-auto hover:brightness-150"
+          >
+            Add Your Profile
+          </PopupButton>
         </div>
       </main>
     </div>
