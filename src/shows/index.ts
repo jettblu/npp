@@ -2,6 +2,14 @@ import { IShow } from "./models";
 
 export const nppShows: IShow[] = [
   {
+    name: "Clue",
+    photoPath: "/shows/spring23/Clue.webp",
+    description: "A mystery show based on the classic board game. Who dunnit?",
+    date: "2023-05-02",
+    location: "Porter 100",
+    time: "9pm",
+  },
+  {
     name: "Carnival",
     photoPath: "/shows/spring23/Cabaret.jpg",
     description:
