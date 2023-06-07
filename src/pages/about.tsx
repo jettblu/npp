@@ -1,4 +1,5 @@
 import VideoPlayer from "@/components/film/VideoPlayer";
+import Image from "next/image";
 import { IMember } from "@/members/models";
 import { pgSpring23 } from "@/pg/spring23";
 import type { NextPage } from "next";
@@ -33,6 +34,19 @@ const Members: NextPage = () => {
               all skill levels.
             </p>
           </div>
+        </div>
+        <div className="my-4">
+          <Image
+            src="/pg/spring23/NPP Group Clue Blur.webp"
+            alt="NPP Group Clue"
+            width={500}
+            height={500}
+            className="rounded-xl mx-auto w-full outline outline-gray-300 hover:outline-gray-400 transition-colors duration-300"
+          />
+          {/* caption for the image */}
+          <p className="text-center text-gray-500">
+            The No Parking Players after our final show of the spring.
+          </p>
         </div>
       </main>
     </div>
