@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@typeform/embed-react": "^2.22.0",
     "autoprefixer": "^10.4.7",
     "fathom-client": "^3.5.0",
     "framer-motion": "^10.12.2",
