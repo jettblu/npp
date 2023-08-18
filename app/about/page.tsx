@@ -1,4 +1,3 @@
-import VideoPlayer from "../../components/film/VideoPlayer";
 import Image from "next/image";
 import { IMember } from "@/members/models";
 import { pgSpring23 } from "@/pg/spring23";
@@ -18,8 +17,8 @@ const About: NextPage = () => {
         <div className="min-h-[6vh]"></div>
 
         <div className="mb-8">
-          <h1 className="text-4xl md:text-5xl font-bold mb-2 text-black dark:text-white">
-            About
+          <h1 className="font-extrabold text-left text-4xl md:text-5xl text-gray-800 dark:text-gray-200 hover:dark:text-white hover:text-black transition-colors duration-1500">
+            NPP
           </h1>
           <div className="text-lg text-gray-500 mb-4">
             <p>Inducing giggles and guffaws since 1996.</p>

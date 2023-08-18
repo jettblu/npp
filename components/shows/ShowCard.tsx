@@ -2,6 +2,7 @@ import { NextPage } from "next";
 
 import { IShow } from "@/shows/models";
 import DateFormatter from "../time/DateFormatter";
+import { SCOTS_ROSE } from "@/constants/colors";
 
 interface Props {
   show: IShow;
@@ -9,13 +10,8 @@ interface Props {
 const ShowCard: NextPage<Props> = (props) => {
   const { show } = { ...props };
 
-  const handleShowClicked = function () {};
-
   return (
-    <div
-      className="flex flex-col md:flex-row border p-2 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-900"
-      onClick={() => handleShowClicked()}
-    >
+    <div className="flex flex-col md:flex-row border p-2 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-900">
       <img
         src={show.photoPath}
         className="h-50 w-40 object-cover"

@@ -1,4 +1,4 @@
-import "./globals.css";
+import "@/styles/globals.css";
 import type { Metadata } from "next";
 import React from "react";
 import Fathom from "../components/metrics/Fathom";
@@ -17,10 +17,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`lg:mb-8 mb-[250px] px-3`}>
+      <body className={`lg:mb-8 mb-[250px]`}>
         <Navbar />
         <div className="h-20" />
         {children}
+
         <Fathom />
       </body>
     </html>

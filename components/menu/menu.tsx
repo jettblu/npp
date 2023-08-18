@@ -1,9 +1,8 @@
-"use client";
-
+import { AnimatePresence, motion } from "framer-motion";
 import { NextPage } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { useEffect, useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
 
 type Props = {
   children: any;
@@ -11,27 +10,18 @@ type Props = {
 
 const Menu: NextPage<Props> = (props) => {
   const [isMenuMobile, setMenuMobile] = useState(false);
-  const [windowSize, setWindowSize] = useState({
-    width: 0,
-    height: 0,
-  });
   const [isSmallScreen, setIsSmallScreen] = useState(false);
 
   const { children } = { ...props };
 
   // change style based on boolean
   const menuWrapperClassName = isMenuMobile
-    ? "flex flex-col md:flex-row md:ml-auto mt-3 md:mt-0 min-h-[80vh] rounded-lg bg-[#F2FBFE] z-10 border-gray-500 border bg-gray-50 py-4 pl-4 dark:bg-black md:min-h-0 text-2xl space-y-2"
-    : "hidden text-xl md:flex flex-col md:flex-row md:ml-auto mt-3 md:mt-0";
+    ? "flex flex-col md:flex-row md:ml-auto mt-3 md:mt-0 h-fit rounded-lg bg-[#F2FBFE] z-20 border-sky-500 mx-2 border bg-gray-50 py-4 md:py-0 dark:bg-[#0c0c0c] md:min-h-0 text-4xl"
+    : "hidden text-2xl md:flex flex-col md:flex-row md:ml-auto";
 
   useEffect(() => {
     // Handler to call on window resize
     function handleResize() {
-      // Set window width/height to state
-      setWindowSize({
-        width: window.innerWidth,
-        height: window.innerHeight,
-      });
       if (window.innerWidth < 778) {
         setIsSmallScreen(true);
       } else {
@@ -45,67 +35,68 @@ const Menu: NextPage<Props> = (props) => {
 
   return (
     <nav
-      className={`py-2 md:py-4 mb-4 -mx-4 md:mx-0 px-2 fixed z-20 top-0 w-full ${
-        !isMenuMobile && "bg-white/70 dark:bg-black/70"
-      } ${isMenuMobile && "bg-white dark:bg-black"}`}
+      className={`h-20 fixed mx-auto md:flex top-0 pt-4 md:pt-0 dark:bg-[#0c0c0c]/50 z-20 w-full border-b-2 border-gray-400 dark:border-gray-600 backdrop-blur-xl`}
     >
-      <div className="md:px-4 mx-auto md:flex md:items-center">
-        <div className="flex justify-between items-center hover:cursor-pointer">
-          <div onClick={() => setMenuMobile(false)}>
-            <Link href="/">
-              <span className="font-extrabold text-3xl text-gray-600 dark:text-gray-300 hover:dark:text-white hover:text-black transition-colors duration-1500">
-                NPP
-              </span>
-            </Link>
-          </div>
-          <button
-            id="nav-icon"
-            onClick={() => setMenuMobile(!isMenuMobile)}
-            type="button"
-            className={`inline-flex ${
-              isMenuMobile && "open"
-            } items-center mt-2 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:hover:bg-gray-700 dark:focus:ring-gray-600`}
-            aria-controls="mobile-menu"
-            aria-expanded="false"
-          >
-            <span className="bg-gray-500 dark:bg-gray-400"></span>
-            <span className="bg-gray-500 dark:bg-gray-400"></span>
-            <span className="bg-gray-500 dark:bg-gray-400"></span>
-          </button>
+      {/* tasty hamburger menu */}
+      <div className="flex justify-between items-center hover:cursor-pointer mr-4">
+        <div onClick={() => setMenuMobile(false)}>
+          <Link href="/">
+            <Image
+              src="/brand/logoLight.webp"
+              className="ml-3"
+              width={50}
+              height={50}
+              alt="Logo"
+            />
+          </Link>
         </div>
-        <AnimatePresence>
-          <motion.div
-            id="menu"
-            className={menuWrapperClassName}
-            onClick={() => setMenuMobile(false)}
-            animate={isMenuMobile || !isSmallScreen ? "open" : "closed"}
-            variants={{
-              closed: {
-                scale: 0,
-                opacity: 0,
-                transition: {
-                  type: "spring",
-                  duration: 5,
-                  delayChildren: 0.2,
-                  staggerChildren: 0.05,
-                },
-              },
-              open: {
-                scale: 1,
-                opacity: 1,
-                transition: {
-                  type: "spring",
-                  duration: 0.4,
-                  delayChildren: 0.2,
-                  staggerChildren: 0.05,
-                },
-              },
-            }}
-          >
-            {children}
-          </motion.div>
-        </AnimatePresence>
+        <button
+          id="nav-icon"
+          onClick={() => setMenuMobile(!isMenuMobile)}
+          type="button"
+          className={`inline-flex ${
+            isMenuMobile && "open"
+          } items-center mt-2 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:hover:bg-gray-700 dark:focus:ring-gray-600`}
+          aria-controls="mobile-menu"
+          aria-expanded="false"
+        >
+          <span className="bg-gray-500 dark:bg-gray-400"></span>
+          <span className="bg-gray-500 dark:bg-gray-400"></span>
+          <span className="bg-gray-500 dark:bg-gray-400"></span>
+        </button>
       </div>
+      <AnimatePresence>
+        <motion.div
+          id="menu"
+          className={menuWrapperClassName}
+          onClick={() => setMenuMobile(false)}
+          animate={isMenuMobile || !isSmallScreen ? "open" : "closed"}
+          variants={{
+            closed: {
+              scale: 0,
+              opacity: 0,
+              transition: {
+                type: "spring",
+                duration: 5,
+                delayChildren: 0.2,
+                staggerChildren: 0.05,
+              },
+            },
+            open: {
+              scale: 1,
+              opacity: 1,
+              transition: {
+                type: "spring",
+                duration: 0.4,
+                delayChildren: 0.2,
+                staggerChildren: 0.05,
+              },
+            },
+          }}
+        >
+          {children}
+        </motion.div>
+      </AnimatePresence>
     </nav>
   );
 };
@@ -114,10 +105,12 @@ export default Menu;
 
 type MenuItemProps = {
   children: any;
+  hexColor?: string;
 };
 
 export function MenuItem(props: MenuItemProps) {
   const { children } = { ...props };
+  const hexColor = props.hexColor ? props.hexColor : "rgba(255,255,255,0)";
   return (
     <motion.div
       variants={{
@@ -132,6 +125,10 @@ export function MenuItem(props: MenuItemProps) {
             staggerChildren: 0.05,
           },
         },
+      }}
+      className="h-full brightness-105 hover:brightness-125 hover:cursor-pointer transition-all duration-500 ease-in-out px-2 md:px-0 text-center rounded-md md:rounded-none saturate-50 hover:saturate-100"
+      style={{
+        backgroundColor: hexColor,
       }}
     >
       {children}

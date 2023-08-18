@@ -4,45 +4,57 @@ import Link from "next/link";
 
 import Menu, { MenuItem } from "../menu/menu";
 import { usePathname } from "next/navigation";
+import {
+  BLUE_THREAD,
+  GOLD_THREAD,
+  GREEN_THREAD,
+  HIGHLANDS_SKY_BLUE,
+  SCOTS_ROSE,
+} from "@/constants/colors";
 
 export default function Navbar() {
   const pathname = usePathname();
-
+  const defaultBgColor = "rgba(255,255,255,0)";
   return (
     <Menu>
-      <MenuItem>
-        <Link href="../about">
-          <span
-            className={`p-2 lg:px-4 md:mx-2 text-gray-400 rounded hover:bg-gray-200 hover:cursor-pointer hover:text-gray-700 dark:hover:bg-gray-300 dark:hover:text-black transition-colors duration-300 ${
-              pathname == "/about" ? "font-bold" : ""
-            } `}
-          >
-            About
-          </span>
-        </Link>
-      </MenuItem>
-
-      <MenuItem>
-        <Link href="../members">
-          <span
-            className={`p-2 lg:px-4 md:mx-2 text-gray-400 rounded hover:bg-gray-200 hover:cursor-pointer hover:text-gray-700 dark:hover:bg-gray-300 dark:hover:text-black transition-colors duration-300 ${
-              pathname == "/explore" ? "font-bold" : ""
-            }`}
-          >
-            Members
-          </span>
-        </Link>
-      </MenuItem>
-
-      <MenuItem>
-        <Link href="../shows">
-          <span
-            className={`p-2 lg:px-4 md:mx-2 text-graay-700 dark:text-white md:text-center md:border md:border-solid border-gray-300 dark:border-gray-600 rounded-lg hover:bg-gray-700 dark:hover:bg-white hover:cursor-pointer hover:text-white dark:hover:text-black transition-colors duration-300 mt-1 md:mt-0 md:ml-1`}
-          >
-            Shows
-          </span>
-        </Link>
-      </MenuItem>
+      <div className="flex flex-col space-y-4 md:space-y-0 md:flex-row md:divide-x-2 md:divide-gray-900">
+        <MenuItem hexColor="#ebeced">
+          <Link href="/learn">
+            <div
+              className="h-full md:px-6 md:pt-5 rounded-md md:rounded-none"
+              style={{
+                background: `radial-gradient(${defaultBgColor} 30%, ${GOLD_THREAD} 100%)`,
+              }}
+            >
+              Learn
+            </div>
+          </Link>
+        </MenuItem>
+        <MenuItem hexColor="#ebeced">
+          <Link href="/members">
+            <div
+              className="h-full md:px-6 md:pt-5 rounded-md md:rounded-none"
+              style={{
+                background: `radial-gradient(${defaultBgColor} 10%, ${SCOTS_ROSE} 100%)`,
+              }}
+            >
+              Members
+            </div>
+          </Link>
+        </MenuItem>
+        <MenuItem hexColor="#ebeced">
+          <Link href="/shows">
+            <div
+              className={`h-full md:px-6 md:pt-5 rounded-md md:rounded-none`}
+              style={{
+                background: `radial-gradient(${defaultBgColor} 10%, ${GREEN_THREAD} 100%)`,
+              }}
+            >
+              Shows
+            </div>
+          </Link>
+        </MenuItem>
+      </div>
     </Menu>
   );
 }

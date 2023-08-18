@@ -1,14 +1,12 @@
 import type { NextPage } from "next";
-import { IShow } from "@/shows/models";
+
 import { nppShows } from "@/shows";
-import { useState } from "react";
+
 import VideoPlayer from "../../components/film/VideoPlayer";
 import ShowCard from "../../components/shows/ShowCard";
 
 const Members: NextPage = () => {
-  const [featuredShow, setFeaturedShow] = useState<IShow>(nppShows[0]);
-  // TODO: UPDATE TO EXLUDE FEATURED SHOW
-  const [archiveShows, setArchiveShows] = useState<IShow[]>(nppShows);
+  const archiveShows = nppShows;
   return (
     <div className="">
       {/* <Head>

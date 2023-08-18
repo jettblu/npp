@@ -1,4 +1,7 @@
+"use client";
+
 import { NextPage } from "next";
+import Image from "next/image";
 
 import { IMember } from "@/members/models";
 import PositionBadge from "./PositionBadge";
@@ -17,9 +20,11 @@ const MemberCard: NextPage<Props> = (props) => {
         className="mx-auto transition z-0 hover:z-10 ease-in-out hover:scale-110 border-2 border-gray-600 dark:border-gray-300 rounded-md hover:shadow-lg hover:shadow-gray-500 grayscale hover:grayscale-0"
         onClick={() => handleMemberClicked()}
       >
-        <img
+        <Image
           src={member.photoPath}
-          className="h-64 object-cover"
+          className="object-cover"
+          width={256}
+          height={256}
           alt={`A fun photo of ${member.name}`}
         />
         <div className="flex flex-col space-y-2 mt-2 px-2">
