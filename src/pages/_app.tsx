@@ -4,7 +4,7 @@ import { trackPageview, load } from "fathom-client";
 import { Router } from "next/router";
 import { useEffect } from "react";
 
-import Layout from "../components/Layout";
+import Layout from "../../components/Layout";
 
 // Record a pageview when route changes
 Router.events.on("routeChangeComplete", (as, routeProps) => {

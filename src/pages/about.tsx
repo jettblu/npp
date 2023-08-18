@@ -1,4 +1,4 @@
-import VideoPlayer from "@/components/film/VideoPlayer";
+import VideoPlayer from "../../components/film/VideoPlayer";
 import Image from "next/image";
 import { IMember } from "@/members/models";
 import { pgSpring23 } from "@/pg/spring23";

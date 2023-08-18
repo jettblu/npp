@@ -2,7 +2,6 @@ import { NextPage } from "next";
 
 import { IMember } from "@/members/models";
 import PositionBadge from "./PositionBadge";
-import Image from "next/image";
 
 interface Props {
   member: IMember;

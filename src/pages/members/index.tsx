@@ -1,7 +1,7 @@
 import { IMember } from "@/members/models";
 import { pgSpring23 } from "@/pg/spring23";
 import type { NextPage } from "next";
-import MemberCard from "../../components/members/MemberCard";
+import MemberCard from "../../../components/members/MemberCard";
 import { PopupButton } from "@typeform/embed-react";
 
 const Members: NextPage = () => {

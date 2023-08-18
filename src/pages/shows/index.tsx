@@ -2,8 +2,8 @@ import type { NextPage } from "next";
 import { IShow } from "@/shows/models";
 import { nppShows } from "@/shows";
 import { useState } from "react";
-import ShowCard from "@/components/shows/ShowCard";
-import VideoPlayer from "@/components/film/VideoPlayer";
+import ShowCard from "../../../components/shows/ShowCard";
+import VideoPlayer from "../../../components/film/VideoPlayer";
 
 const Members: NextPage = () => {
   const [featuredShow, setFeaturedShow] = useState<IShow>(nppShows[0]);
