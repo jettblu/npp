@@ -19,6 +19,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`lg:mb-8 mb-[250px] px-3`}>
         <Navbar />
+        <div className="h-20" />
         {children}
         <Fathom />
       </body>
