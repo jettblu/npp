@@ -1,7 +1,8 @@
+"use client";
+
 import { NextPage } from "next";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { useRouter } from "next/router";
 import { AnimatePresence, motion } from "framer-motion";
 
 type Props = {
