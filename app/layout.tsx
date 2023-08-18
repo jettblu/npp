@@ -1,6 +1,8 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import React from "react";
+import Fathom from "../components/metrics/Fathom";
+import Navbar from "../components/navbars/Navbar";
 
 export const metadata: Metadata = {
   title: "No Parking Players",
