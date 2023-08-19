@@ -7,8 +7,8 @@ export default function Learn() {
         </h1>
         <p className="text-gray-600 text-lg">
           The No Parking Players have a long history of teaching improv to the
-          Carnegie Mellon community. This is a collection of resources for
-          learning improv that we have gathered over the years.
+          Carnegie Mellon community. This is a collection of resources that we
+          have gathered over the years.
         </p>
       </div>
     </div>
