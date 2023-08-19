@@ -37,7 +37,7 @@ export default function SidebarPopper({
         e.stopPropagation();
         setTimeout(() => {
           setHide(true);
-        }, 500);
+        }, 1000);
       };
     }
   }, [isSmallScreen]);
