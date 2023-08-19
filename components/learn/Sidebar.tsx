@@ -1,6 +1,7 @@
 import { getAllDocs } from "@/docs";
 import { DocTypeEnum } from "@/docs/types";
 import DocListItemPreview from "../docs/docPreview";
+import Link from "next/link";
 
 export default function SidebarKnowledge(props: { hide: boolean }) {
   const { hide } = { ...props };
@@ -14,7 +15,9 @@ export default function SidebarKnowledge(props: { hide: boolean }) {
       } h-full flex flex-col w-60 bg-black text-white fixed left-0 top-20 px-4`}
     >
       <div className="min-h-[2vh]"></div>
-      <h1 className="text-2xl font-bold mb-2 text-white mb-8">Knowledge</h1>
+      <Link href="/learn" className="hover:cursor-pointer">
+        <h1 className="text-2xl font-bold mb-2 text-white mb-8">Knowledge</h1>
+      </Link>
       <p className="text-gray-400">Games</p>
       {gameDocs.map((doc) => (
         <DocListItemPreview key={doc.slug} doc={doc} />
