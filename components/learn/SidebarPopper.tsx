@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import SidebarKnowledge from "./Sidebar";
 
 export default function SidebarPopper({
   children,
@@ -11,6 +10,7 @@ export default function SidebarPopper({
   const [hide, setHide] = useState(false);
   const conatinerName = "sidebar-container";
   const [isSmallScreen, setIsSmallScreen] = useState(false);
+  const [loaded, setLoaded] = useState(false);
   const [childContainer, setChildContainer] = useState<HTMLElement | null>(
     null
   );
@@ -46,13 +46,15 @@ export default function SidebarPopper({
     <div className="">
       {
         // plus sign on small screen
-        isSmallScreen && hide && (
+        isSmallScreen && hide ? (
           <div
-            className="p-2 rounded-full bg-green-400/50 font-bold text-center m-2"
+            className="p-2 rounded-full bg-green-400/50 font-bold text-center m-2 h-10"
             onClick={() => setHide(false)}
           >
             +
           </div>
+        ) : (
+          <div className="h-10 md:h-0"></div>
         )
       }
       {
