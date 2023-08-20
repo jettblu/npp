@@ -8,6 +8,9 @@ export default function SidebarKnowledge(props: { hide: boolean }) {
   const gameDocs = getAllDocs({
     docEnum: DocTypeEnum.Game,
   });
+  const formDocs = getAllDocs({
+    docEnum: DocTypeEnum.Form,
+  });
   return (
     <div
       className={`${
@@ -18,10 +21,21 @@ export default function SidebarKnowledge(props: { hide: boolean }) {
       <Link href="/learn" className="hover:cursor-pointer">
         <h1 className="text-2xl font-bold mb-2 text-white mb-8">Knowledge</h1>
       </Link>
-      <p className="text-gray-400">Games</p>
-      {gameDocs.map((doc) => (
-        <DocListItemPreview key={doc.slug} doc={doc} />
-      ))}
+      <div className="flex flex-col space-y-4">
+        {/* games section */}
+        <div>
+          <p className="text-gray-400">Games</p>
+          {gameDocs.map((doc) => (
+            <DocListItemPreview key={doc.slug} doc={doc} />
+          ))}
+        </div>
+        <div>
+          <p className="text-gray-400">Forms</p>
+          {formDocs.map((doc) => (
+            <DocListItemPreview key={doc.slug} doc={doc} />
+          ))}
+        </div>
+      </div>
     </div>
   );
 }

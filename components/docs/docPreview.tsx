@@ -19,6 +19,10 @@ const DocListItemPreview = ({ doc }: Props) => {
       urlBase = "/learn/skills/[slug]";
       urlAs = `/learn/skills/${slug}`;
       break;
+    case DocTypeEnum.Form:
+      urlBase = "/learn/forms/[slug]";
+      urlAs = `/learn/forms/${slug}`;
+      break;
     default:
       urlBase = "/games/[slug]";
       urlAs = `/learn//games/${slug}`;

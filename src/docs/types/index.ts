@@ -39,6 +39,7 @@ export const DEFAULT_DOC: DocType = {
 export enum DocTypeEnum {
   Game = 0,
   Skill = 1,
+  Form = 2,
 }
 
 export type Contributor = {
@@ -60,6 +61,8 @@ export function getDocEnumFromString(enumString: string) {
       return DocTypeEnum.Game;
     case "skill":
       return DocTypeEnum.Skill;
+    case "form":
+      return DocTypeEnum.Form;
     default:
       return DocTypeEnum.Game;
   }

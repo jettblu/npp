@@ -6,7 +6,8 @@ import { DEFAULT_DOC, DocType, DocTypeEnum } from "./types";
 import { getContributorById } from "./contributors";
 
 const gameDocsDirectory = join(process.cwd(), "docs/games");
-const skillDocsDirectory = join(process.cwd(), "docs/games");
+const skillDocsDirectory = join(process.cwd(), "docs/skills");
+const formsDocsDirectory = join(process.cwd(), "docs/forms");
 
 const defaultFields = [
   "slug",
@@ -135,6 +136,10 @@ function getDirectoryByEnum(docEnum: DocTypeEnum) {
     }
     case DocTypeEnum.Skill: {
       directory = skillDocsDirectory;
+      break;
+    }
+    case DocTypeEnum.Form: {
+      directory = formsDocsDirectory;
       break;
     }
     default: {
