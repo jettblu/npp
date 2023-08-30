@@ -5,21 +5,34 @@ import Image from "next/image";
 
 import { IMember } from "@/members/models";
 import PositionBadge from "./PositionBadge";
+import { useState } from "react";
+import Modal from "../modals/modal";
+import MemberCardFull from "./MemberCardFull";
 
 interface Props {
   member: IMember;
 }
 const MemberCard: NextPage<Props> = (props) => {
   const { member } = { ...props };
+  const [openModal, setOpenModal] = useState(false);
 
-  const handleMemberClicked = function () {};
+  function handleMemberClicked() {
+    setOpenModal(true);
+  }
+
+  function handleModalClose() {
+    setOpenModal(false);
+  }
 
   return (
     <div className="">
       <div
-        className="mx-auto transition z-0 hover:z-10 ease-in-out hover:scale-110 border-2 border-gray-600 dark:border-gray-300 rounded-md hover:shadow-lg hover:shadow-gray-500 grayscale hover:grayscale-0"
+        className="mx-auto hover:cursor-pointer group transition z-0 hover:z-10 ease-in-out hover:scale-110 border-2 border-gray-600 dark:border-gray-300 rounded-md hover:shadow-lg hover:shadow-gray-500 grayscale hover:grayscale-0"
         onClick={() => handleMemberClicked()}
       >
+        <div className="invisible group-hover:visible absolute top-0 right-0  bg-gray-500/50 p-2 rounded-tr-md text-white text-center rounded-bl-md text-sm">
+          See More
+        </div>
         <Image
           src={member.photoPath}
           className="object-cover"
@@ -38,6 +51,9 @@ const MemberCard: NextPage<Props> = (props) => {
           </div>
         </div>
       </div>
+      <Modal isOpen={openModal} onRequestClose={handleModalClose}>
+        <MemberCardFull member={member} />
+      </Modal>
     </div>
   );
 };

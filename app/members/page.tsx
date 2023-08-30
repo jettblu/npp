@@ -1,13 +1,16 @@
-import { IMember } from "@/members/models";
+import { IAlumni, IMember } from "@/members/models";
 import { pgSpring23 } from "@/pg/spring23";
 import type { NextPage } from "next";
 import { PopupButton } from "@typeform/embed-react";
 
 import MemberCard from "../../components/members/MemberCard";
 import ButtonAddProfile from "../../components/members/ButtonAddProfile";
+import { pgFall23 } from "@/pg/fall23";
+import { pgAlumni } from "@/pg/alumni";
+import AlumniCard from "../../components/members/AlumniCard";
 
 const Members: NextPage = () => {
-  const membersToDisplay: IMember[] = pgSpring23;
+  const membersToDisplay: IMember[] = pgFall23;
   return (
     <div className="">
       {/* <Head>
@@ -33,6 +36,20 @@ const Members: NextPage = () => {
             membersToDisplay.map((member: IMember, index: number) => (
               <MemberCard member={member} key={index} />
             ))}
+        </div>
+        <div className="mt-4 mb-12">
+          <h1 className="text-4xl md:text-5xl font-bold mb-2 text-black dark:text-white">
+            Alumni
+          </h1>
+          <div>
+            {/* TODO: sort and label by year */}
+            <p className="text-lg text-gray-500">2023</p>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-10 mx-auto place-items-center bg-gray-100 md:bg-inherit py-2 rounded-md">
+              {pgAlumni.map((member: IAlumni, index: number) => (
+                <AlumniCard member={member} key={index} />
+              ))}
+            </div>
+          </div>
         </div>
         {/* project add form */}
         <div className="mx-auto">

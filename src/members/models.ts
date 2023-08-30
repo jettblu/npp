@@ -4,9 +4,37 @@ export interface IMember {
   photoPath: string;
   socials: ISocials;
   position?: ClubPosition;
+  astrologicalSign?: AstrologicalSign;
   hometown?: string;
   isPg: boolean;
   isBoard: boolean;
+}
+
+type AstrologicalSign =
+  | "aries"
+  | "taurus"
+  | "gemini"
+  | "cancer"
+  | "leo"
+  | "virgo"
+  | "libra"
+  | "scorpio"
+  | "sagittarius"
+  | "capricorn"
+  | "aquarius"
+  | "pisces"
+  | "gasp!";
+
+export interface IAlumni {
+  name: string;
+  description?: string;
+  photoPath: string;
+  positions: ClubPosition[];
+  wasBoard: boolean;
+  wasPg: boolean;
+  socials: ISocials;
+  gradYear: number;
+  hometown?: string;
 }
 
 export interface ISocials {
@@ -24,6 +52,7 @@ export enum ClubPosition {
   social = 4,
   troupeManager = 5,
   pg = 6,
+  detourChair = 7,
 }
 
 export function clubPositionToUiString(position?: ClubPosition): string {
@@ -44,7 +73,10 @@ export function clubPositionToUiString(position?: ClubPosition): string {
       return "Manager";
     }
     case ClubPosition.pg: {
-      return "Pg Member";
+      return "Pg";
+    }
+    case ClubPosition.detourChair: {
+      return "Detour";
     }
     default: {
       return "Member";

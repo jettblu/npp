@@ -17,10 +17,7 @@ export default function Learn() {
             of teaching, learning, and performing. Consider this your guide to
             the intergalactic adventures of improv comedy.
           </p>
-          <p>
-            Consider this your guide to the intergalactic adventures of improv
-            comedy.
-          </p>
+
           <p className="italic mt-2">
             Thanks for stopping by and good luck on your journey,
           </p>
