@@ -80,7 +80,9 @@ export const pgFall23: IMember[] = [
     socials: {},
     isPg: true,
     isBoard: false,
-    hometown: "Turkey",
+    astrologicalSign:"taurus",
+    hometown: "İstanbul, Türkiye",
+    description:"In my senior year of high school, I learned about improv by watching Whose Line clips. Then, when I came to CMU, NPP had a performance in our orientation week, and I was hooked."
   },
   {
     name: "Peter Ragone",
