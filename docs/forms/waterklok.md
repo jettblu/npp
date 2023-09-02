@@ -12,11 +12,11 @@ skills: ["story"]
 
 **Type:** It's Own Thing
 
-**Setup:** n/a
+**Setup:** None
 
-**WOS:** word
+**WOS:** Word
 
-**Idea Generation / Prep:** n/a
+**Idea Generation / Prep:** None
 
 **Form:** 
 

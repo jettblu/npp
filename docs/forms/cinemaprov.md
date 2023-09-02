@@ -12,7 +12,7 @@ skills: ["story"]
 
 **Type:** Loose monoscene (potential for people to play other characters than their OG)
 
-**Setup:** n/a
+**Setup:** None
 
 **WOS:** Name of a made-up film
 

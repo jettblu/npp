@@ -12,11 +12,11 @@ skills: ["story"]
 
 **Type:** Harold
 
-**Setup:** n/a
+**Setup:** None
 
 **WOS:** Why might someone run away from home?
 
-**Idea Generation / Prep:** n/a
+**Idea Generation / Prep:** None
 
 **Form:**
 
