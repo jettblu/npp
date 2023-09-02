@@ -27,4 +27,5 @@ Continue the pattern until someone makes a mistake, in which case they must leav
 - Picking their own number
 - Picking the number of the player who just picked them (e.g.: if Number Five picks Number Three and Number Three picks Number Five again, Number Three is out)
 - Selecting a number of someone who is out of the circle (ex: calling on number 4 after 4 got out)
-- Play until there is only one survivor. This survivor becomes the new Big Booty; everyone else gets renumbered according to how long they survived in the circle.
+
+Play until there is only one survivor. This survivor becomes the new Big Booty; everyone else gets renumbered according to how long they survived in the circle.
