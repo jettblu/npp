@@ -34,10 +34,17 @@ export default function SidebarPopper({
     const newChildContainer = document.getElementById(conatinerName);
     if (newChildContainer && isSmallScreen) {
       newChildContainer.onclick = (e) => {
-        e.stopPropagation();
-        setTimeout(() => {
-          setHide(true);
-        }, 1000);
+        // check if it was a h1 or a that was clicked
+        if (
+          e.target instanceof HTMLHeadingElement ||
+          e.target instanceof HTMLAnchorElement
+        ) {
+          e.stopPropagation();
+          setTimeout(() => {
+            setHide(true);
+          }, 1000);
+          return;
+        }
       };
     }
   }, [isSmallScreen]);
