@@ -49,7 +49,7 @@ export default function Learn() {
               Every Wednesday: 8-10 PM, Posner 145
             </p>
             <p className="font-semibold" style={{ color: GOLD_THREAD }}>
-              Every Sunday: 8-10 PM, TBD
+              Every Sunday: 8-10 PM, Doherty 1211
             </p>
           </div>
         </div>
