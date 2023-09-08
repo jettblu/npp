@@ -11,9 +11,15 @@ export default function LearnLayout({
       <SidebarPopper>
         <SidebarKnowledge hide={false} />
       </SidebarPopper>
-      <div className="md:h:w-60" />
       <div className="min-h-[2vh]" />
-      {children}
+      <div className="flex flex-row">
+        <div className="md:w-[600px] lg:w-32 h-16"/>
+
+        <div className="mx-auto">
+            {children}
+        </div>
+
+      </div>
     </div>
   );
 }
