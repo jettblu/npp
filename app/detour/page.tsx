@@ -13,7 +13,7 @@ export default function Detour() {
     <div>
       <div className="md:fixed md:w-[50%] md:h-full md:bg-black">
         <div className="w-fit px-2 py-1 rounded-md bg-yellow-500/20 text-gray-700 md:text-gray-200 text-sm ml-8 mt-8 ring-[1px] ring-yellow-400">
-          April 5th-6th, 2024
+          March 29-30, 2024
         </div>
         <div className="md:h-[24vh] w-12" />
         <div className="text-center">
@@ -31,7 +31,7 @@ export default function Detour() {
             </p>
           </a>
         </div>
-        <CountdownTimer />
+        <CountdownTimer date="2024-03-29" />
       </div>
       <div className="md:fixed md:right-0 md:w-[50%] md:h-full px-2 md:px-0">
         <Image
