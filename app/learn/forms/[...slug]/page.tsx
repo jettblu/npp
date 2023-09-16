@@ -9,6 +9,39 @@ import DocKeepReadingPreview from "../../../../components/docs/docKeepReadingPre
 import VideoPlayer from "../../../../components/film/VideoPlayer";
 import Custom404 from "../../../404";
 
+import type { Metadata, ResolvingMetadata } from "next";
+
+type Props = {
+  params: { slug: string };
+};
+
+export async function generateMetadata(
+  { params }: Props,
+  parent: ResolvingMetadata
+): Promise<Metadata> {
+  // read route params
+  const slug = params.slug[0];
+  const doc = getDocBySlug({ slug: slug, docEnum: DocTypeEnum.Form });
+  // optionally access and extend (rather than replace) parent metadata
+  const previousImages = (await parent).openGraph?.images || [];
+  const newOgImages = doc.image
+    ? [doc.image, ...previousImages]
+    : previousImages;
+  return {
+    title: doc.title,
+    openGraph: {
+      images: newOgImages,
+      title: doc.title,
+      description: doc.oneLiner,
+    },
+    twitter: {
+      images: newOgImages,
+      title: doc.title,
+      description: doc.oneLiner,
+    },
+    description: doc.oneLiner,
+  };
+}
 export default async function Post(context: any) {
   // get the doc type from the query string
   const docEnum = DocTypeEnum.Form;
