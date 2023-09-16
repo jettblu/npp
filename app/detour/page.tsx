@@ -1,6 +1,6 @@
 import CountdownTimer from "../../components/time/Countdown";
 
-export default function () {
+export default function Detour() {
   return (
     <div>
       <div className="max-w-3xl mx-auto">
