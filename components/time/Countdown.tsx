@@ -10,13 +10,11 @@ export default function CountdownTimer() {
   const [seconds, setSeconds] = useState<number>(0);
   const [message, setMessage] = useState<string>("");
 
-  let countDownDate = time;
-
   useEffect(() => {
     var updateTime = setInterval(() => {
       var now = new Date().getTime();
 
-      var difference = countDownDate - now;
+      var difference = time - now;
 
       var newDays = Math.floor(difference / (1000 * 60 * 60 * 24));
       var newHours = Math.floor(
@@ -50,17 +48,23 @@ export default function CountdownTimer() {
     <div className="max-w-xl mx-auto">
       <div className="mx-auto w-fit text-3xl font-semibold my-6 flex flex-row space-x-8">
         <div className="flex-cols w-fit">
-          <div className="rounded-md p-2  w-fit">{days}</div>
+          <div className="rounded-md p-2  w-fit">
+            {days < 10 ? `0${days}` : days}
+          </div>
           <p className="text-sm text-gray-500 text-center font-regular">Days</p>
         </div>
         <div className="flex-cols w-fit">
-          <div className="rounded-md p-2 w-fit">{hours}</div>
+          <div className="rounded-md p-2 w-fit">
+            {hours < 10 ? `0${hours}` : hours}
+          </div>
           <p className="text-sm text-gray-500 text-center font-regular">
             Hours
           </p>
         </div>
         <div className="flex-cols w-fit">
-          <div className="rounded-md p-2 w-fit">{seconds}</div>
+          <div className="rounded-md p-2 w-fit">
+            {seconds < 10 ? `0${seconds}` : seconds}
+          </div>
           <p className="text-sm text-gray-500 text-center font-regular">
             Seconds
           </p>
