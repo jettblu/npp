@@ -46,7 +46,7 @@ export default function CountdownTimer() {
   }, [time]);
   return (
     <div className="max-w-xl mx-auto">
-      <div className="mx-auto w-fit text-3xl font-semibold my-6 flex flex-row space-x-8">
+      <div className="mx-auto w-fit text-3xl text-yellow-400 font-semibold my-6 flex flex-row space-x-8">
         <div className="flex-cols w-fit">
           <div className="rounded-md p-2  w-fit">
             {days < 10 ? `0${days}` : days}
