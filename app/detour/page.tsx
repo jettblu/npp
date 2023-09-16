@@ -39,7 +39,7 @@ export default function Detour() {
           width={200}
           height={200}
           alt="Detour people cover"
-          className="rounded-md h-full w-full object-cover"
+          className="rounded-md h-full w-full object-cover sepia"
         />
       </div>
     </div>
