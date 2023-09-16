@@ -1,8 +1,8 @@
 "use client";
 import { useState, useEffect } from "react";
 
-export default function CountdownTimer() {
-  const [time, setTime] = useState<number>(Date.parse("2024-04-05"));
+export default function CountdownTimer(params: { date: string }) {
+  const [time, setTime] = useState<number>(Date.parse(params.date));
   const [newTime, setNewTime] = useState<number>(0);
   const [days, setDays] = useState<number>(0);
   const [hours, setHours] = useState<number>(0);
