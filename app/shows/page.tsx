@@ -4,6 +4,13 @@ import { nppShows } from "@/shows";
 
 import VideoPlayer from "../../components/film/VideoPlayer";
 import ShowCard from "../../components/shows/ShowCard";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Shows",
+  description:
+    "Come experience the magic of improv comedy! Check out our upcoming shows and our archive of past performances.",
+};
 
 const Members: NextPage = () => {
   const archiveShows = nppShows;

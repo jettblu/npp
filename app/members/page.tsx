@@ -1,13 +1,18 @@
 import { IAlumni, IMember } from "@/members/models";
-import { pgSpring23 } from "@/pg/spring23";
 import type { NextPage } from "next";
-import { PopupButton } from "@typeform/embed-react";
 
 import MemberCard from "../../components/members/MemberCard";
 import ButtonAddProfile from "../../components/members/ButtonAddProfile";
 import { pgFall23 } from "@/pg/fall23";
 import { pgAlumni } from "@/pg/alumni";
 import AlumniCard from "../../components/members/AlumniCard";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Members",
+  description:
+    "Meet the No Parking Players! We're Carnegie Mellon University's premier improv comedy troupe.",
+};
 
 const Members: NextPage = () => {
   const membersToDisplay: IMember[] = pgFall23;
