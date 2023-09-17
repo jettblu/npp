@@ -42,12 +42,15 @@ export default function Detour() {
           </div>
         </div>
         <CountdownTimer date="2024-03-29" />
-        <p className="my-6 xl:my-0 text-gray-400 text-xl xl:text-gray-400 xl:fixed bottom-2 left-0 xl:max-w-[50%] px-2">
-          Join us for a weekend of workshops, shows, and more. Classes will be
-          led by some of the best instructors from around the nation. We'll also
-          have shows featuring local and national talent. More details to come.
-          Save the date!
-        </p>
+
+        <div className="my-6 xl:my-0 text-gray-400 text-xl xl:text-gray-400 xl:fixed bottom-2 left-0 xl:max-w-[50%] px-2 py-2 w-full">
+          <p className="mx-auto max-w-2xl xl:max-w-xl">
+            Join us for a weekend of workshops, shows, and more. Classes will be
+            led by some of the best instructors from around the nation. We'll
+            also have shows featuring local and national talent. More details to
+            come. Save the date!
+          </p>
+        </div>
       </div>
       <Splash />
     </div>
