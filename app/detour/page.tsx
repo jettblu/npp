@@ -12,9 +12,9 @@ export default function Detour() {
   return (
     <div className="xl:bg-black">
       <div className="xl:fixed xl:w-[50%] xl:h-full xl:bg-gradient-to-b from-black to-zinc-900">
-        <div className="w-fit px-2 py-1 rounded-xl bg-yellow-500/20 text-gray-700 xl:text-gray-200 text-sm ml-8 mt-8 ring-[1px] ring-yellow-400">
+        {/* <div className="w-fit px-2 py-1 rounded-xl bg-yellow-500/20 text-gray-700 xl:text-gray-200 text-sm ml-8 mt-8 ring-[1px] ring-yellow-400">
           March 29-30, 2024
-        </div>
+        </div> */}
         <div className="xl:h-[24vh] w-12" />
         <div className="text-center">
           <h1 className="text-7xl font-bold xl:text-white">Detour</h1>
@@ -40,8 +40,11 @@ export default function Detour() {
               </p>
             </a>
           </div>
+          <div className="mx-auto w-fit px-2 py-1 rounded-xl bg-yellow-500/20 text-gray-700 xl:text-gray-200 text-lg mt-8 ring-[1px] ring-yellow-400">
+            March 29-30, 2024
+          </div>
         </div>
-        <CountdownTimer date="2024-03-29" />
+        {/* <CountdownTimer date="2024-03-29" /> */}
 
         <div className="my-6 xl:my-0 text-gray-400 text-xl xl:text-gray-400 xl:fixed bottom-2 left-0 xl:max-w-[50%] px-2 py-2 w-full">
           <p className="mx-auto max-w-2xl xl:max-w-xl">
