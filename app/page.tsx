@@ -3,6 +3,7 @@ import { IMember } from "@/members/models";
 import { pgSpring23 } from "@/pg/spring23";
 import type { NextPage } from "next";
 import SocialFooter from "../components/footer/SocialFooter";
+import Link from "next/link";
 
 const Home: NextPage = () => {
   const membersToDisplay: IMember[] = pgSpring23;
@@ -31,7 +32,7 @@ const Home: NextPage = () => {
             />
           </div>
 
-          <div className="text-lg text-gray-500 mb-4">
+          <div className="text-lg text-gray-500">
             <p>Sharing giggles and guffaws since 1996.</p>
           </div>
           <div className="text-xl text-black dark:text-white">
@@ -42,6 +43,16 @@ const Home: NextPage = () => {
             <p>
               We perform monthly shows and host improv classes for students of
               all skill levels.
+            </p>
+            <p className="mt-2 text-gray-400">
+              P.S. You like improv festivals? You'll love{" "}
+              <Link
+                href="/detour"
+                className="hover:cursor-pointer text-yellow-400 underline"
+              >
+                Detour
+              </Link>
+              .
             </p>
           </div>
         </div>
