@@ -1,4 +1,5 @@
 import type { NextPage } from "next";
+import Image from "next/image";
 
 import { nppShows } from "@/shows";
 
@@ -11,6 +12,25 @@ export const metadata: Metadata = {
   description:
     "Come experience the magic of improv comedy! Check out our upcoming shows and our archive of past performances.",
 };
+
+const toBase64 = (str: string) =>
+  typeof window === "undefined"
+    ? Buffer.from(str).toString("base64")
+    : window.btoa(str);
+
+const shimmer = (w: number, h: number) => `
+<svg width="${w}" height="${h}" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <linearGradient id="g">
+      <stop stop-color="#333" offset="20%" />
+      <stop stop-color="#222" offset="50%" />
+      <stop stop-color="#333" offset="70%" />
+    </linearGradient>
+  </defs>
+  <rect width="${w}" height="${h}" fill="#333" />
+  <rect id="r" width="${w}" height="${h}" fill="url(#g)" />
+  <animate xlink:href="#r" attributeName="x" from="-${w}" to="${w}" dur="1s" repeatCount="indefinite"  />
+</svg>`;
 
 const Members: NextPage = () => {
   const archiveShows = nppShows;
@@ -33,7 +53,17 @@ const Members: NextPage = () => {
             Come experience the magic of improv comedy!
           </p>
         </div>
-        <div className="flex flex-col space-y-2">
+        <Image
+          src="/shows/fall23/calendar.png"
+          placeholder={`data:image/svg+xml;base64,${toBase64(
+            shimmer(700, 475)
+          )}`}
+          className="rounded-lg"
+          width={1000}
+          height={500}
+          alt="Calendar"
+        />
+        <div className="mt-8 flex flex-col space-y-2">
           {archiveShows.map((s) => {
             return <ShowCard show={s} key={s.name} />;
           })}
