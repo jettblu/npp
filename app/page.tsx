@@ -32,7 +32,7 @@ const Home: NextPage = () => {
           </div>
 
           <div className="text-lg text-gray-500 mb-4">
-            <p>Inducing giggles and guffaws since 1996.</p>
+            <p>Sharing giggles and guffaws since 1996.</p>
           </div>
           <div className="text-xl text-black dark:text-white">
             <p>
