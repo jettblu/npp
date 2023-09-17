@@ -2,6 +2,7 @@ import Image from "next/image";
 import { IMember } from "@/members/models";
 import { pgSpring23 } from "@/pg/spring23";
 import type { NextPage } from "next";
+import SocialFooter from "../components/footer/SocialFooter";
 
 const Home: NextPage = () => {
   const membersToDisplay: IMember[] = pgSpring23;
@@ -58,6 +59,7 @@ const Home: NextPage = () => {
           </p>
         </div>
       </main>
+      <SocialFooter />
     </div>
   );
 };
