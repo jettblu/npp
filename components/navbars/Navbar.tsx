@@ -18,7 +18,7 @@ export default function Navbar() {
   return (
     <Menu>
       <div className="flex flex-col space-y-4 md:space-y-0 md:flex-row md:divide-x-2 md:divide-gray-900">
-        <MenuItem hexColor="#ebeced">
+        <MenuItem hexColor={GOLD_THREAD}>
           <Link href="/learn">
             <div
               className="h-full md:px-6 md:pt-5 rounded-md md:rounded-none"
@@ -30,7 +30,7 @@ export default function Navbar() {
             </div>
           </Link>
         </MenuItem>
-        <MenuItem hexColor="#ebeced">
+        <MenuItem hexColor={SCOTS_ROSE}>
           <Link href="/members">
             <div
               className="h-full md:px-6 md:pt-5 rounded-md md:rounded-none"
@@ -42,7 +42,7 @@ export default function Navbar() {
             </div>
           </Link>
         </MenuItem>
-        <MenuItem hexColor="#ebeced">
+        <MenuItem hexColor={GREEN_THREAD}>
           <Link href="/shows">
             <div
               className={`h-full md:px-6 md:pt-5 rounded-md md:rounded-none`}

@@ -126,10 +126,10 @@ export function MenuItem(props: MenuItemProps) {
           },
         },
       }}
-      className="h-full brightness-105 hover:brightness-125 hover:cursor-pointer transition-all duration-500 ease-in-out px-2 md:px-0 text-center rounded-md md:rounded-none saturate-50 hover:saturate-100"
-      style={{
-        backgroundColor: hexColor,
-      }}
+      className="h-full brightness-105 hover:brightness-125 hover:cursor-pointer transition-all duration-500 ease-in-out px-2 md:px-0 text-center rounded-md md:rounded-none hover:saturate-100"
+      // style={{
+      //   backgroundColor: hexColor,
+      // }}
     >
       {children}
     </motion.div>
