@@ -1,5 +1,5 @@
 import { NextPage } from "next";
-
+import Image from "next/image";
 import { IShow } from "@/shows/models";
 import DateFormatter from "../time/DateFormatter";
 import { SCOTS_ROSE } from "@/constants/colors";
@@ -12,8 +12,10 @@ const ShowCard: NextPage<Props> = (props) => {
 
   return (
     <div className="flex flex-col md:flex-row border p-2 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-900">
-      <img
+      <Image
         src={show.photoPath}
+        width={200}
+        height={200}
         className="h-50 w-40 object-cover"
         alt={`${show.name} show poster.`}
       />
