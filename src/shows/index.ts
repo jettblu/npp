@@ -1,10 +1,20 @@
 import { IShow } from "./models";
 
 export const nppShows: IShow[] = [
-   {
+  {
+    name: "OSHA Approved",
+    photoPath: "/shows/fall23/Osha.jpg",
+    description:
+      "A comedy compliant improv show. Remember, look left and right twice before crossing the street, and always wear your seatbelts",
+    date: "2023-09-22",
+    location: "Porter 100",
+    time: "8pm",
+  },
+  {
     name: "Mission Improvable",
     photoPath: "/shows/fall23/Bond.jpg",
-    description: "A spy themed improv show. Come see the agents of NPP in our first show of the year!",
+    description:
+      "A spy themed improv show. Come see the agents of NPP in our first show of the year!",
     date: "2023-09-08",
     location: "Porter 100",
     time: "8pm",
