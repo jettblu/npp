@@ -2,13 +2,19 @@ import { NextPage } from "next";
 import Image from "next/image";
 import { IShow } from "@/shows/models";
 import DateFormatter from "../time/DateFormatter";
-import { SCOTS_ROSE } from "@/constants/colors";
+import fs from "node:fs/promises";
+import { join } from "path";
+import { getPlaiceholder } from "plaiceholder";
 
 interface Props {
   show: IShow;
 }
-const ShowCard: NextPage<Props> = (props) => {
+
+const basePath = join(process.cwd(), "public");
+export default async function ShowCard(props: Props) {
   const { show } = { ...props };
+  const imgBuffer = await fs.readFile(join(basePath, show.photoPath));
+  const { base64 } = await getPlaiceholder(imgBuffer);
 
   return (
     <div className="flex flex-col md:flex-row border p-2 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-900">
@@ -16,6 +22,8 @@ const ShowCard: NextPage<Props> = (props) => {
         src={show.photoPath}
         width={200}
         height={200}
+        placeholder="blur"
+        blurDataURL={base64}
         className="h-50 w-40 object-cover"
         alt={`${show.name} show poster.`}
       />
@@ -32,6 +40,4 @@ const ShowCard: NextPage<Props> = (props) => {
       </div>
     </div>
   );
-};
-
-export default ShowCard;
+}

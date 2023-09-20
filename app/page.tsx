@@ -3,6 +3,7 @@ import { IMember } from "@/members/models";
 import { pgSpring23 } from "@/pg/spring23";
 import type { NextPage } from "next";
 import SocialFooter from "../components/footer/SocialFooter";
+import GroupImage from "../public/pg/spring23/NPP Group Clue Blur.webp";
 import Link from "next/link";
 
 const Home: NextPage = () => {
@@ -58,10 +59,11 @@ const Home: NextPage = () => {
         </div>
         <div className="my-4">
           <Image
-            src="/pg/spring23/NPP Group Clue Blur.webp"
+            src={GroupImage}
             alt="NPP Group Clue"
             width={500}
             height={500}
+            placeholder="blur"
             className="rounded-xl mx-auto w-full ring ring-2 ring-gray-300 hover:ring-gray-400 transition-colors duration-300"
           />
           {/* caption for the image */}
