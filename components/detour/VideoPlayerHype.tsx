@@ -27,7 +27,7 @@ const VideoPlayerHype: NextPage<Props> = (props) => {
         url={videoSrc}
         playing={playVideo}
         loop={true}
-        controls={true}
+        controls={false}
         light={false}
         width="100%"
         height="100%"
