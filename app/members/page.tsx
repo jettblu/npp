@@ -7,6 +7,7 @@ import { pgFall23 } from "@/pg/fall23";
 import { pgAlumni } from "@/pg/alumni";
 import AlumniCard from "../../components/members/AlumniCard";
 import { Metadata } from "next";
+import ImageWithBlur from "../../components/images/ImageWithBlur";
 
 export const metadata: Metadata = {
   title: "Members",
@@ -39,7 +40,15 @@ const Members: NextPage = () => {
         <div className="grid my-6 grid-cols-1 md:grid-cols-3 gap-5 md:gap-10 mx-auto place-items-center bg-gray-100 md:bg-inherit py-2 rounded-md">
           {membersToDisplay.length != 0 &&
             membersToDisplay.map((member: IMember, index: number) => (
-              <MemberCard member={member} key={index} />
+              <MemberCard member={member} key={index}>
+                <ImageWithBlur
+                  src={member.photoPath}
+                  className="object-cover"
+                  width={256}
+                  height={256}
+                  alt={`A fun photo of ${member.name}`}
+                />
+              </MemberCard>
             ))}
         </div>
         <div className="mt-4 mb-12">

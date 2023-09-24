@@ -5,15 +5,16 @@ import Image from "next/image";
 
 import { IMember } from "@/members/models";
 import PositionBadge from "./PositionBadge";
-import { useState } from "react";
+import { ReactNode, useState } from "react";
 import Modal from "../modals/modal";
 import MemberCardFull from "./MemberCardFull";
 
 interface Props {
   member: IMember;
+  children: ReactNode;
 }
 const MemberCard: NextPage<Props> = (props) => {
-  const { member } = { ...props };
+  const { member, children } = { ...props };
   const [openModal, setOpenModal] = useState(false);
 
   function handleMemberClicked() {
@@ -33,13 +34,7 @@ const MemberCard: NextPage<Props> = (props) => {
         <div className="invisible group-hover:visible absolute top-0 right-0  bg-gray-500/50 p-2 rounded-tr-md text-white text-center rounded-bl-md text-sm">
           See More
         </div>
-        <Image
-          src={member.photoPath}
-          className="object-cover"
-          width={256}
-          height={256}
-          alt={`A fun photo of ${member.name}`}
-        />
+        {children}
         <div className="flex flex-col space-y-2 mt-2 px-2">
           <div className="flex flex-row">
             <p className="my-2 text-lg text-gray-700 dark:text-gray-200 font-semibold">
