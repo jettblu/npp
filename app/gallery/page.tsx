@@ -6,6 +6,7 @@ export default function Gallery() {
     <div className="max-w-7xl mx-auto">
       {imagePaths.map((src: string, i: number) => (
         <ImageWithBlur
+          key={i}
           width={100}
           height={100}
           alt="Gallery image"
