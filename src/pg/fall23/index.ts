@@ -35,7 +35,7 @@ export const pgFall23: IMember[] = [
     hometown: "Torrance, California",
     astrologicalSign: "Gemini",
     description:
-      "Improv is a lightning ⚡️ bolt of energy and laughter. I haven't recovered since I was struck on my first day of college. And the people... oh my gosh, the people!",
+      "Improv is a lightning ⚡️ bolt of energy and laughter. I was struck on my first day of college, and I haven’t recovered.  And the people... oh my gosh, the people!",
   },
   {
     name: "Alex Newkirk",
@@ -80,9 +80,10 @@ export const pgFall23: IMember[] = [
     socials: {},
     isPg: true,
     isBoard: false,
-    astrologicalSign:"Taurus",
+    astrologicalSign: "Taurus",
     hometown: "İstanbul, Türkiye",
-    description:"In my senior year of high school, I learned about improv by watching Whose Line clips. Then, when I came to CMU, NPP had a performance in our orientation week, and I was hooked."
+    description:
+      "In my senior year of high school, I learned about improv by watching Whose Line clips. Then, when I came to CMU, NPP had a performance in our orientation week, and I was hooked.",
   },
   {
     name: "Peter Ragone",
