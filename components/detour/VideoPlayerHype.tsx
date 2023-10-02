@@ -22,7 +22,7 @@ const VideoPlayerHype: NextPage<Props> = (props) => {
   }
 
   return (
-    <div className="w-full h-full">
+    <div className="w-full h-full max-h-full max-w-full overflow-hidden">
       <ReactPlayer
         url={videoSrc}
         playing={playVideo}
