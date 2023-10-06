@@ -2,6 +2,15 @@ import { IShow } from "./models";
 
 export const nppShows: IShow[] = [
   {
+    name: "Epic Laugh Battles of History",
+    photoPath: "/shows/fall23/epicLaughBattles.png",
+    description:
+      "NPP faces Tisbert in a historic comedy battle. Who will have the last laugh?",
+    date: "2023-10-06",
+    location: "Studio Theater",
+    time: "8pm",
+  },
+  {
     name: "OSHA Approved",
     photoPath: "/shows/fall23/Osha.jpg",
     description:
