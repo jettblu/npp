@@ -17,26 +17,19 @@ export default function Learn() {
             of teaching, learning, and performing. Consider this your guide to
             the intergalactic adventures of improv comedy.
           </p>
-
-          <p className="italic mt-2">
-            Thanks for stopping by and good luck on your improv journey,
-          </p>
-          <p className="font-semibold mt-2">The No Parking Players</p>
         </div>
         <div className="rounded-md px-2 py-2 bg-gradient-to-r from-gray-50 to-white mt-8 ring-2 ring-gray-500/40">
           <div className="flex flex-row">
+            <h2 className="text-2xl font-bold mb-2 text-black dark:text-white">
+              Workshop
+            </h2>
+            <div className="flex-grow">
+              <div className="rounded-md bg-gray-400/10 rounded-md p-2 float-right">
+                Fall 2023
+              </div>
+            </div>
+          </div>
 
-          <h2 className="text-2xl font-bold mb-2 text-black dark:text-white">
-            Workshop
-          </h2>
-          <div className="flex-grow">
-      <div className="rounded-md bg-gray-400/10 rounded-md p-2 float-right">
-            Fall 2023
-          </div>
-          </div>
-        
-          </div>
-          
           <p className="prose dark:prose-invert md:prose-xl">
             Learn the basics of improv comedy in a fun, supportive environment.
             No experience necessary!
