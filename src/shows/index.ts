@@ -2,6 +2,23 @@ import { IShow } from "./models";
 
 export const nppShows: IShow[] = [
   {
+    name: "Got Mail?",
+    photoPath: "/shows/fall23/mail.jpg",
+    description:
+      "Someone you pass at the improv show may already be the love of your life. Or at least your next scene partner.",
+    date: "2023-11-10",
+    location: "Porter 100",
+    time: "8pm",
+  },
+  {
+    name: "Haunted Survivor",
+    photoPath: "/shows/fall23/hauntedSurvivor.png",
+    description: "A spooky improv show. Who will survive the night?!",
+    date: "2023-11-3",
+    location: "Porter 100",
+    time: "8pm",
+  },
+  {
     name: "Epic Laugh Battles of History",
     photoPath: "/shows/fall23/epicLaughBattles.png",
     description:
@@ -14,7 +31,7 @@ export const nppShows: IShow[] = [
     name: "OSHA Approved",
     photoPath: "/shows/fall23/Osha.jpg",
     description:
-      "A comedy compliant improv show. Remember, look left and right twice before crossing the street, and always wear your seatbelts",
+      "A comedy compliant improv show. Remember, look left and right twice before crossing the street, and always wear your seatbelts.",
     date: "2023-09-22",
     location: "Porter 100",
     time: "8pm",
