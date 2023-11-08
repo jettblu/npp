@@ -34,70 +34,79 @@ const Menu: NextPage<Props> = (props) => {
   }, []);
 
   return (
-    <nav
-      className={`h-20 fixed mx-auto md:flex top-0 pt-4 md:pt-0 dark:bg-[#0c0c0c]/50 z-20 w-full border-b-2 border-gray-400 dark:border-gray-600 backdrop-blur-xl`}
-    >
-      {/* tasty hamburger menu */}
-      <div className="flex justify-between items-center hover:cursor-pointer mr-4">
-        <div onClick={() => setMenuMobile(false)}>
-          <Link href="/">
-            <Image
-              src="/brand/logoLight.webp"
-              className="ml-3"
-              width={50}
-              height={50}
-              alt="Logo"
-            />
-          </Link>
+    <div className="fixed w-full z-20 top-0">
+      <nav
+        className={`h-20  mx-auto md:flex pt-4 md:pt-0 dark:bg-[#0c0c0c]/50 z-20 w-full border-b-2 border-gray-400 dark:border-gray-600 backdrop-blur-xl`}
+      >
+        {/* tasty hamburger menu */}
+        <div className="flex justify-between items-center hover:cursor-pointer mr-4">
+          <div onClick={() => setMenuMobile(false)}>
+            <Link href="/">
+              <Image
+                src="/brand/logoLight.webp"
+                className="ml-3"
+                width={50}
+                height={50}
+                alt="Logo"
+              />
+            </Link>
+          </div>
+          <button
+            id="nav-icon"
+            onClick={() => setMenuMobile(!isMenuMobile)}
+            type="button"
+            className={`inline-flex ${
+              isMenuMobile && "open"
+            } items-center mt-2 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:hover:bg-gray-700 dark:focus:ring-gray-600`}
+            aria-controls="mobile-menu"
+            aria-expanded="false"
+          >
+            <span className="bg-gray-500 dark:bg-gray-400"></span>
+            <span className="bg-gray-500 dark:bg-gray-400"></span>
+            <span className="bg-gray-500 dark:bg-gray-400"></span>
+          </button>
         </div>
-        <button
-          id="nav-icon"
-          onClick={() => setMenuMobile(!isMenuMobile)}
-          type="button"
-          className={`inline-flex ${
-            isMenuMobile && "open"
-          } items-center mt-2 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:hover:bg-gray-700 dark:focus:ring-gray-600`}
-          aria-controls="mobile-menu"
-          aria-expanded="false"
-        >
-          <span className="bg-gray-500 dark:bg-gray-400"></span>
-          <span className="bg-gray-500 dark:bg-gray-400"></span>
-          <span className="bg-gray-500 dark:bg-gray-400"></span>
-        </button>
-      </div>
-      <AnimatePresence>
-        <motion.div
-          id="menu"
-          className={menuWrapperClassName}
-          onClick={() => setMenuMobile(false)}
-          animate={isMenuMobile || !isSmallScreen ? "open" : "closed"}
-          variants={{
-            closed: {
-              scale: 0,
-              opacity: 0,
-              transition: {
-                type: "spring",
-                duration: 5,
-                delayChildren: 0.2,
-                staggerChildren: 0.05,
+        <AnimatePresence>
+          <motion.div
+            id="menu"
+            className={menuWrapperClassName}
+            onClick={() => setMenuMobile(false)}
+            animate={isMenuMobile || !isSmallScreen ? "open" : "closed"}
+            variants={{
+              closed: {
+                scale: 0,
+                opacity: 0,
+                transition: {
+                  type: "spring",
+                  duration: 5,
+                  delayChildren: 0.2,
+                  staggerChildren: 0.05,
+                },
               },
-            },
-            open: {
-              scale: 1,
-              opacity: 1,
-              transition: {
-                type: "spring",
-                duration: 0.4,
-                delayChildren: 0.2,
-                staggerChildren: 0.05,
+              open: {
+                scale: 1,
+                opacity: 1,
+                transition: {
+                  type: "spring",
+                  duration: 0.4,
+                  delayChildren: 0.2,
+                  staggerChildren: 0.05,
+                },
               },
-            },
-          }}
-        >
-          {children}
-        </motion.div>
-      </AnimatePresence>
-    </nav>
+            }}
+          >
+            {children}
+          </motion.div>
+        </AnimatePresence>
+      </nav>
+      <Link href="/shows" className="z-0">
+        <div className="flex flex-row justify-center w-full bg-gradient-to-r from-purple-300 via-orange-200 to-yellow-300 z-0">
+          <p className="text-xl md:text-2xl font-semibold text-black dark:text-white px-2">
+            Free Improv show this Friday (Nov 10th) at 8 PM in Porter 100!
+          </p>
+        </div>
+      </Link>
+    </div>
   );
 };
 
