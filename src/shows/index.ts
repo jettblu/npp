@@ -3,7 +3,7 @@ import { IShow } from "./models";
 export const nppShows: IShow[] = [
   {
     name: "Got Mail?",
-    photoPath: "/shows/fall23/mail.jpg",
+    photoPath: "/shows/fall23/gotMail.jpg",
     description:
       "Someone you pass at the improv show may already be the love of your life. Or at least your next scene partner.",
     date: "2023-11-10",
