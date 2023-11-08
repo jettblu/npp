@@ -55,7 +55,7 @@ export default function SidebarPopper({
         // plus sign on small screen
         isSmallScreen && hide ? (
           <div
-            className="p-2 rounded-full bg-green-400/50 font-bold text-center m-2 h-10"
+            className="p-2 rounded-full bg-green-400/50 font-bold text-center m-2 h-10 mt-16"
             onClick={() => setHide(false)}
           >
             +
