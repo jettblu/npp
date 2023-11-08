@@ -24,7 +24,7 @@ export default async function ShowCard(props: Props) {
         height={200}
         placeholder="blur"
         blurDataURL={base64}
-        className="h-50 w-40 object-cover"
+        className="min-w-40 min-h-48 w-40 h-64 object-cover"
         alt={`${show.name} show poster.`}
       />
       <div className="flex flex-col space-y-2 mt-2 px-2">
