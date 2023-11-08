@@ -17,7 +17,7 @@ export default function SidebarKnowledge(props: { hide: boolean }) {
         hide && "invisible"
       } h-full flex flex-col w-full md:w-60 bg-black text-white fixed left-0 top-20 px-4`}
     >
-      <div className="min-h-[2vh]"></div>
+      <div className="min-h-[3vh]"></div>
       <Link href="/learn" className="hover:cursor-pointer">
         <h1 className="text-2xl font-bold mb-2 text-white mb-8">Knowledge</h1>
       </Link>
