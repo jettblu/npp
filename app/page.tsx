@@ -42,8 +42,14 @@ const Home: NextPage = () => {
               improv comedy troupe.
             </p>
             <p>
-              We perform monthly shows and host improv classes for students of
-              all skill levels.
+              We perform monthly{" "}
+              <Link
+                href="/detour"
+                className="hover:cursor-pointer text-yellow-400 underline"
+              >
+                shows
+              </Link>{" "}
+              and host improv classes for students of all skill levels.
             </p>
             <p className="mt-2 text-gray-400">
               P.S. You like improv festivals? You'll love{" "}
