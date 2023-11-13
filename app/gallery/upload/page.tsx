@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 
 export default function Upload() {
@@ -36,6 +37,7 @@ export default function Upload() {
       setSuccessMsg(
         "Upload successful! We will review your image and add it to the gallery soon."
       );
+      setFile(null);
       setHasUploaded(true);
       setUploadSuccess(true);
     } else {
@@ -47,15 +49,22 @@ export default function Upload() {
     setUploading(false);
   }
   return (
-    <div className="max-w-7xl pb-20 px-2 mx-auto">
-      <div className="mt-2 mb-6">
+    <div className="max-w-7xl pb-8 px-2 mx-auto">
+      <div className="min-h-[8vh]" />
+      <div className="mb-4 md:mb-8">
         <h1 className="text-3xl font-bold">Upload</h1>
         <p className="text-lg text-gray-600">
           Add a silly smile or a sweet shot to our photo gallery.
         </p>
+        <Link
+          href="/gallery"
+          className="text-yellow-600 text-lg py-1 hover:brightness-105"
+        >
+          Back to Gallery
+        </Link>
       </div>
-      <div className="flex flex-col space-y-8 md:space-y-0 md:flex-row md:mt-16">
-        <div className="md:w-1/2 w-full md:h-[400px] bg-gray-400 rounded-md">
+      <div className="flex flex-col space-y-8 md:space-y-0 md:flex-row relative">
+        <div className="w-full h-[400px] md:w-1/2 md:h-[400px] bg-gray-400 rounded-md">
           {file && (
             <Image
               src={URL.createObjectURL(file)}
