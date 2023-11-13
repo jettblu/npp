@@ -76,6 +76,16 @@ const Home: NextPage = () => {
           <p className="text-center text-gray-500">
             The No Parking Players after our final show of the spring.
           </p>
+          <div className="w-full">
+            <div className="mx-auto w-fit">
+              <Link
+                href="/gallery"
+                className="text-yellow-400 text-lg py-1 hover:brightness-105 text-center mx-auto"
+              >
+                👀 View More Photos 👀
+              </Link>
+            </div>
+          </div>
         </div>
       </main>
       <SocialFooter />
