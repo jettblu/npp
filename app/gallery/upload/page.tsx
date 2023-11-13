@@ -3,13 +3,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: "Upload",
-  description:
-    "Add a silly smile or a sweet shot to the No Parking Players's photo gallery.",
-};
 
 export default function Upload() {
   const [file, setFile] = useState(null);
