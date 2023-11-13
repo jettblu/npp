@@ -6,6 +6,13 @@ import cloudinary, {
 } from "../../src/utils/cloudinary";
 import Image from "next/image";
 import Bridge from "../../components/icons/Bridge";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "NPP Gallery",
+  description:
+    "Silly shots from our improv shows and workshops. Most of these were taken by members at Carnegie Mellon University.",
+};
 
 const folderGallery = "gallery";
 async function getImages() {
