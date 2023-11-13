@@ -1,18 +1,11 @@
 import Link from "next/link";
 import ImageWithBlur from "../../components/images/ImageWithBlur";
-import cloudinary from "../../src/utils/cloudinary";
+import cloudinary, {
+  ImagePropsCloudinary,
+  getBase64ImageUrlCloudinary,
+} from "../../src/utils/cloudinary";
 import Image from "next/image";
 import Bridge from "../../components/icons/Bridge";
-
-/* eslint-disable no-unused-vars */
-export interface ImagePropsCloudinary {
-  id: number;
-  height: string;
-  width: string;
-  public_id: string;
-  format: string;
-  blurDataUrl?: string;
-}
 
 const folderGallery = "gallery";
 async function getImages() {
@@ -35,6 +28,17 @@ async function getImages() {
       format: result.format,
     });
     i++;
+  }
+  // get blur data urls
+  const blurImagePromises = results.resources.map(
+    (image: ImagePropsCloudinary) => {
+      return getBase64ImageUrlCloudinary(image);
+    }
+  );
+  const imagesWithBlurDataUrls = await Promise.all(blurImagePromises);
+  // add blur data urls to reduced results
+  for (let i = 0; i < reducedResults.length; i++) {
+    reducedResults[i].blurDataUrl = imagesWithBlurDataUrls[i];
   }
   return reducedResults;
 }
@@ -78,6 +82,8 @@ export default async function Gallery() {
                 width={200}
                 height={200}
                 alt="Gallery image"
+                placeholder="blur"
+                blurDataURL={image.blurDataUrl}
                 src={`https://res.cloudinary.com/${process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME}/image/upload/c_scale,w_720/${image.public_id}.${image.format}`}
                 className="transform rounded-lg brightness-90 transition will-change-auto group-hover:brightness-110 w-full h-full object-cover object-center"
                 sizes="(max-width: 640px) 100vw,
