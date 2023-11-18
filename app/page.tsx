@@ -49,7 +49,7 @@ const Home: NextPage = () => {
               >
                 shows
               </Link>{" "}
-              and host improv classes for students of all skill levels.
+              and offer fun-filled improv classes for beginners to advanced performers.
             </p>
             <p className="mt-2 text-gray-400">
               P.S. You like improv festivals? You'll love{" "}
