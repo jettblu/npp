@@ -99,13 +99,14 @@ const Menu: NextPage<Props> = (props) => {
           </motion.div>
         </AnimatePresence>
       </nav>
-      {/* <Link href="/shows" className="z-0">
+      <Link href="/shows" className="z-0">
         <div className="flex flex-row justify-center w-full bg-gradient-to-r from-purple-300 via-orange-200 to-yellow-300 z-0">
           <p className="text-xl md:text-2xl font-semibold text-black dark:text-white px-2">
-            Free Improv show this Friday (Nov 10th) at 8 PM in Porter 100!
+            Musical Improv show tonight (Dec 12th) at 9 PM in the Studio
+            Theater!
           </p>
         </div>
-      </Link> */}
+      </Link>
     </div>
   );
 };
