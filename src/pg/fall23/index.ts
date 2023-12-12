@@ -94,4 +94,28 @@ export const pgFall23: IMember[] = [
     isBoard: false,
     hometown: "Boston, Massachusetts",
   },
+  {
+    name: "Gabriel Aguirre",
+    photoPath: "/pg/fall23/gabe.jpg",
+    position: ClubPosition.pg,
+    socials: {},
+    isPg: true,
+    isBoard: false,
+    astrologicalSign: "Sagittarius",
+    hometown: "Lexington, Massachusetts",
+    description:
+      "I had hopes of hosting a late night show as a kid and this is how I cling onto that fading dream.",
+  },
+  {
+    name: "Kaya Kozlowski",
+    photoPath: "/pg/fall23/kaya.jpg",
+    position: ClubPosition.pg,
+    socials: {},
+    isPg: true,
+    isBoard: false,
+    astrologicalSign: "Aquarius",
+    hometown: "Schiller Park, Illinois",
+    description:
+      "I like being silly and doing silly things!!!! I also like laughing!!!! And I like making other people laugh!!!!!!!!",
+  },
 ];
