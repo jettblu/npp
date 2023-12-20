@@ -7,6 +7,8 @@ import cloudinary, {
 import Image from "next/image";
 import Bridge from "../../components/icons/Bridge";
 import { Metadata } from "next";
+// disable cache
+import { unstable_noStore as noStore } from "next/cache";
 
 export const metadata: Metadata = {
   title: "NPP Gallery",
@@ -53,6 +55,7 @@ async function getImages() {
 export default async function Gallery() {
   const imagePaths: string[] = [];
   const images = await getImages();
+  noStore();
   return (
     <div className="min-h-screen pb-20">
       <div className="columns-1 gap-4 sm:columns-2 xl:columns-3 2xl:columns-4 px-2">
