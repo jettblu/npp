@@ -3,7 +3,7 @@ import { IShow } from "./models";
 export const nppShows: IShow[] = [
   {
     name: "Cluesical",
-    photoPath: "/shows/fall23/cluesical.png",
+    photoPath: "/shows/fall23/Cluesical.png",
     description:
       "A musical improv show based on murder, deception, and downright debauchery. Who dunnit and who sung it?!",
     date: "2023-12-10",
