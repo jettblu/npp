@@ -14,7 +14,7 @@ export default function Splash() {
   }
 
   return (
-    <div className="relative xl:fixed xl:right-0 xl:w-[50%] xl:h-full px-2 xl:px-0">
+    <div className="relative h-full w-full">
       {showPlaceholder && (
         <div className="absolute top-0 left-0 w-full xl:h-full">
           <Image
@@ -27,7 +27,7 @@ export default function Splash() {
         </div>
       )}
 
-      <div className="xl:absolute xl:right-0">
+      <div className="absolute top-0 left-0 w-full overflow-none">
         <VideoPlayerHype
           videoSrc="https://res.cloudinary.com/dn1pjozuf/video/upload/v1694880139/detour_hype_vid_y24als.mp4"
           isPlaying={false}

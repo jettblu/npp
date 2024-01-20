@@ -22,7 +22,7 @@ const VideoPlayerHype: NextPage<Props> = (props) => {
   }
 
   return (
-    <div className="w-full h-full max-h-full max-w-full overflow-hidden">
+    <div className="overflow-hidden">
       <ReactPlayer
         url={videoSrc}
         playing={playVideo}
@@ -31,6 +31,7 @@ const VideoPlayerHype: NextPage<Props> = (props) => {
         light={false}
         width="100%"
         height="100%"
+        style={{ overflow: "hidden" }}
         onReady={() => handleOnReady()}
         muted
       />
