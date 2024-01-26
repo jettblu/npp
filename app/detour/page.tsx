@@ -26,7 +26,7 @@ export default function Detour() {
             <div className="text-center">
               <h1 className="text-9xl font-bold xl:text-white">Detour</h1>
               <h2 className="text-4xl text-yellow-500">
-                April 29th-30th, 2024
+                March 29th-30th, 2024
               </h2>
               <p className="text-4xl text-gray-500">
                 We're bringing the best of improv to Pittsburgh.
