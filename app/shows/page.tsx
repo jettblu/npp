@@ -53,7 +53,7 @@ const Members: NextPage = () => {
             Come experience the magic of improv comedy!
           </p>
         </div>
-        <Image
+        {/* <Image
           src="/shows/fall23/calendar.png"
           placeholder={`data:image/svg+xml;base64,${toBase64(
             shimmer(700, 475)
@@ -62,7 +62,7 @@ const Members: NextPage = () => {
           width={1000}
           height={500}
           alt="Calendar"
-        />
+        /> */}
         <div className="mt-8 flex flex-col space-y-2">
           {archiveShows.map((s) => {
             return <ShowCard show={s} key={s.name} />;
