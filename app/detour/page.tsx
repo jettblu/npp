@@ -2,6 +2,7 @@ import CountdownTimer from "../../components/time/Countdown";
 import Image from "next/image";
 import type { Metadata } from "next";
 import Splash from "../../components/detour/SplashImage";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Detour 2024",
@@ -11,7 +12,7 @@ export const metadata: Metadata = {
 
 export default function Detour() {
   return (
-    <div className="xl:bg-black">
+    <div className="xl:bg-black -mt-4">
       <div className="flex flex-col xl:flex-row xl:h-[92vh]">
         <div className="xl:w-[50%] xl:bg-gradient-to-b from-black to-zinc-900 xl:h-full px-4 relative">
           {/* <div className="w-fit px-2 py-1 rounded-xl bg-yellow-500/20 text-gray-700 xl:text-gray-200 text-sm ml-8 mt-8 ring-[1px] ring-yellow-400">
@@ -48,43 +49,45 @@ export default function Detour() {
           </div>
           <div className="flex flex-col space-y-2 mt-3 ml-4">
             <p className="text-lg text-gray-400">With Classes By</p>
-            <div className="flex flex-row w-fit">
-              <Image
-                src="/pg/spring23/alex.webp"
-                width={100}
-                height={100}
-                alt="Alex Newkirk"
-                className={`rounded-full h-12 w-12 object-cover`}
-              />
-              <Image
-                src="/pg/spring23/stephen.jpg"
-                width={100}
-                height={100}
-                alt="Stephen Tao"
-                className={`rounded-full h-12 w-12 object-cover -ml-2`}
-              />
-              <Image
-                src="/pg/spring23/patrick.jpg"
-                width={100}
-                height={100}
-                alt="Stephen Tao"
-                className={`rounded-full h-12 w-12 object-cover -ml-2`}
-              />
-              <Image
-                src="/pg/spring23/efe.webp"
-                width={100}
-                height={100}
-                alt="Efe"
-                className={`rounded-full h-12 w-12 object-cover -ml-2`}
-              />
-              <Image
-                src="/pg/spring23/liz.webp"
-                width={100}
-                height={100}
-                alt="Efe"
-                className={`rounded-full h-12 w-12 object-cover -ml-2`}
-              />
-            </div>
+            <Link href="/detour/2024/instructors">
+              <div className="flex flex-row w-fit">
+                <Image
+                  src="/detour/2024/instructor headshots/DC Headshot.jpg"
+                  width={100}
+                  height={100}
+                  alt="David Charles"
+                  className={`rounded-full h-12 w-12 object-cover`}
+                />
+                <Image
+                  src="/detour/2024/instructor headshots/FB Headshot.jpg"
+                  width={100}
+                  height={100}
+                  alt="Fred Brown"
+                  className={`rounded-full h-12 w-12 object-cover -ml-2`}
+                />
+                <Image
+                  src="/detour/2024/instructor headshots/JP Headshot.jpg"
+                  width={100}
+                  height={100}
+                  alt="Jonathan Pitts"
+                  className={`rounded-full h-12 w-12 object-cover -ml-2`}
+                />
+                <Image
+                  src="/detour/2024/instructor headshots/RG Headshot.webp"
+                  width={100}
+                  height={100}
+                  alt="Ryan Goodman"
+                  className={`rounded-full h-12 w-12 object-cover -ml-2`}
+                />
+                <Image
+                  src="/detour/2024/instructor headshots/SL Headshot.webp"
+                  width={100}
+                  height={100}
+                  alt="Shaun Laundry"
+                  className={`rounded-full h-12 w-12 object-cover -ml-2`}
+                />
+              </div>
+            </Link>
           </div>
 
           {/* <CountdownTimer date="2024-03-29" /> */}

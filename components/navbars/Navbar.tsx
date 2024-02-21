@@ -10,6 +10,7 @@ import {
   GREEN_THREAD,
   HIGHLANDS_SKY_BLUE,
   SCOTS_ROSE,
+  TEAL_THREAD,
 } from "@/constants/colors";
 
 export default function Navbar() {
@@ -18,15 +19,27 @@ export default function Navbar() {
   return (
     <Menu>
       <div className="flex flex-col space-y-4 md:space-y-0 md:flex-row md:divide-x-2 md:divide-gray-900">
-        <MenuItem hexColor={GOLD_THREAD}>
+        <MenuItem hexColor={TEAL_THREAD}>
           <Link href="/learn">
+            <div
+              className="h-full md:px-6 md:pt-5 rounded-md md:rounded-none"
+              style={{
+                background: `radial-gradient(${defaultBgColor} 30%, ${TEAL_THREAD} 100%)`,
+              }}
+            >
+              Learn
+            </div>
+          </Link>
+        </MenuItem>
+        <MenuItem hexColor={GOLD_THREAD}>
+          <Link href="/detour">
             <div
               className="h-full md:px-6 md:pt-5 rounded-md md:rounded-none"
               style={{
                 background: `radial-gradient(${defaultBgColor} 30%, ${GOLD_THREAD} 100%)`,
               }}
             >
-              Learn
+              Detour
             </div>
           </Link>
         </MenuItem>
