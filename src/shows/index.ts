@@ -1,6 +1,24 @@
 import { IShow } from "./models";
 
 export const nppShows: IShow[] = [
+   {
+    name: "Roman ",
+    photoPath: "/shows/spring24/Roman.jpg",
+    description:
+      "Ancient Rome has never been so silly. Gather your togas and hop on your chariots for a night of laughs!",
+    date: "2024-2-23",
+    location: "Porter 100",
+    time: "8pm",
+   },
+   {
+    name:"Secret Admirer",
+    photoPath: "/shows/spring24/Admirer.jpg",
+    description:
+      "Love is in the air and your secret admirer is in the audience. Come find out who it is!",
+    date: "2024-2-16",
+    location: "Studio Theater",
+    time: "8pm",
+   },
     {
     name: "Conspiracy",
     photoPath: "/shows/spring24/Conspiracy.jpg",
