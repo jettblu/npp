@@ -34,7 +34,7 @@ export default function Detour() {
               </p>
             </div>
 
-            <div className="mx-auto relative w-fit py-1 rounded-xl text-gray-700 xl:text-gray-200 text-sm mt-8 ring-[1px] ring-yellow-400 mx-auto transition-colors duration-300 hover:bg-yellow-500/20 ">
+            <div className="mx-auto relative w-fit py-1 px-1 rounded-xl text-gray-700 xl:text-gray-200 text-sm mt-8 ring-[1px] ring-yellow-400 mx-auto transition-colors duration-300 hover:bg-yellow-500/20 ">
               <a
                 href="https://forms.gle/fuEVXt5XgAavptua9"
                 target="_blank"
