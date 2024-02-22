@@ -93,7 +93,7 @@ export default function Instructors() {
             <p className="">
               Jonathan Pitts is an award-winning international improv theatre
               artist and storyteller. He's performed and/or taught in 26
-              countries and 104 cities. He's the former Executive Director of
+              countries and 104 cities. He's the former Executive Director of{" "}
               <span className="font-bold">Chicago Improv Productions</span>;
               Co-Founder/Producer -
               <span className="font-bold">Chicago Improv Festival</span>;
