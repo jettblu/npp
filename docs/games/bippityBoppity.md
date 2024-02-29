@@ -32,7 +32,7 @@ Group poses require multiple people to perform an action. If everyone gets into 
 The two people on their side put their outer arms to their ears and make the elephant’s ears.
 If everyone gets into formation before the countdown they are good, otherwise the person/people who couldn’t are out.
 
-**Airplane:** Moderator points at someone, says “Airplane. 5, 4, 3, 2, 1.” They have to make pilot’s googles by making two circles with their thumb and index finger, and putting them up to their eyes, but with their hands turned over so their palms are towards their face.
+**Airplane:** Moderator points at someone, says “Airplane. 5, 4, 3, 2, 1.” They have to make pilot’s goggles by making two circles with their thumb and index finger, and putting them up to their eyes, but with their hands turned over so their palms are towards their face.
 The two people on their side put their outer arms out at an angle upwards and make wings.
 If everyone gets into formation before the countdown they are good, otherwise the person/people who couldn’t are out.
 
