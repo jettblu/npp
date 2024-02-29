@@ -15,7 +15,7 @@ import {
 
 export default function Navbar() {
   const pathname = usePathname();
-  const defaultBgColor = "rgba(255,255,255,0)";
+  const defaultBgColor = "rgba(255,255,255,.7)";
   return (
     <Menu>
       <div className="flex flex-col space-y-4 md:space-y-0 md:flex-row md:divide-x-2 md:divide-gray-900">
