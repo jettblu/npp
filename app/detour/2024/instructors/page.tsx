@@ -1,13 +1,26 @@
 import Image from "next/image";
+import { Oswald, Open_Sans } from "next/font/google";
+
+const oswald = Oswald({ subsets: ["latin"], weight: "variable" });
+const open_sans = Open_Sans({ subsets: ["latin"], weight: "variable" });
 
 export default function Instructors() {
   return (
-    <div className="bg-black text-white min-h-[100vh] -mt-4 -mb-8 pb-4">
-      <h1 className="text-6xl text-left font-bold text-yellow-400 max-w-5xl mx-auto">
+    <div
+      className={`bg-detourPrimaryDark text-white min-h-[100vh] -mt-4 -mb-8 pb-4 px-2 ${open_sans.className}`}
+    >
+      <h1
+        className={`text-6xl text-left font-bold text-detourPrimaryYellow max-w-5xl mx-auto ${oswald.className}`}
+      >
         Meet The Instructors
       </h1>
+      <div className="max-w-5xl mx-auto flex flex-row h-[8px]">
+        <div className="bg-detourPrimaryYellow w-1/3" />
+        <div className="bg-detourPrimaryLight w-1/3" />
+        <div className="bg-detourPrimaryBlue w-1/3"></div>
+      </div>
       <div className="flex flex-col space-y-3 max-w-5xl mx-auto prose-xl">
-        <div className="flex flex-col space-y-2 mt-4">
+        <div className="flex flex-col space-y-2 mt-2">
           <Image
             src="/detour/2024/instructor headshots/DC Headshot.jpg"
             width={100}

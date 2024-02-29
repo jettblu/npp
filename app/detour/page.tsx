@@ -3,6 +3,7 @@ import Image from "next/image";
 import type { Metadata } from "next";
 import Splash from "../../components/detour/SplashImage";
 import Link from "next/link";
+import { Oswald, Open_Sans } from "next/font/google";
 
 export const metadata: Metadata = {
   title: "Detour 2024",
@@ -10,11 +11,14 @@ export const metadata: Metadata = {
     "We're bringing the best of improv to Pittsburgh. Join us for a weekend of workshops, shows, and more April 5th-6th, 2024.",
 };
 
+const oswald = Oswald({ subsets: ["latin"], weight: "variable" });
+const open_sans = Open_Sans({ subsets: ["latin"], weight: "variable" });
+
 export default function Detour() {
   return (
-    <div className="xl:bg-black -mt-4">
+    <div className={`xl:bg-detourPrimaryDark -mt-4 ${open_sans.className}`}>
       <div className="flex flex-col xl:flex-row xl:h-[92vh]">
-        <div className="xl:w-[50%] xl:bg-gradient-to-b from-black to-zinc-900 xl:h-full px-4 relative">
+        <div className="xl:w-[50%] xl:bg-gradient-to-b from-detourPrimaryDark to-detourPrimaryBlue xl:h-full px-4 relative">
           {/* <div className="w-fit px-2 py-1 rounded-xl bg-yellow-500/20 text-gray-700 xl:text-gray-200 text-sm ml-8 mt-8 ring-[1px] ring-yellow-400">
           March 29-30, 2024
         </div> */}
@@ -25,11 +29,15 @@ export default function Detour() {
             <div className="h-[18vh]" />
 
             <div className="text-center">
-              <h1 className="text-9xl font-bold xl:text-white">Detour</h1>
-              <h2 className="text-4xl text-yellow-500">
+              <h1
+                className={`text-9xl font-bold xl:text-white ${oswald.className}`}
+              >
+                Detour
+              </h1>
+              <h2 className="text-4xl text-detourPrimaryYellow">
                 March 29th-30th, 2024
               </h2>
-              <p className="text-4xl text-gray-500">
+              <p className="text-4xl text-detourPrimaryLight">
                 We're bringing the best of improv to Pittsburgh.
               </p>
             </div>
@@ -41,16 +49,16 @@ export default function Detour() {
                 rel="noopener noreferrer"
                 className=""
               >
-                <p className="hover:cursor-pointer text-yellow-400 text-2xl">
+                <p className="hover:cursor-pointer text-detourPrimaryYellow text-2xl">
                   Apply to Participate
                 </p>
               </a>
             </div>
           </div>
           <div className="flex flex-col space-y-2 mt-3 ml-4">
-            <p className="text-lg text-gray-400">With Classes By</p>
+            <p className="text-lg text-detourPrimaryLight">With Classes By</p>
             <Link href="/detour/2024/instructors">
-              <div className="flex flex-row w-fit">
+              <div className="flex flex-row w-fit hover:scale-105 duration-300">
                 <Image
                   src="/detour/2024/instructor headshots/DC Headshot.jpg"
                   width={100}
@@ -95,11 +103,9 @@ export default function Detour() {
 
           <div className="space-y-3 xl:text-white mb-8 xl:mb-2 xl:px-2">
             <div className="flex flex-col space-y-1 ">
-              <h2 className="text-4xl xl:text-2xl font-bold">FAQ</h2>
-              <h3 className="text-2xl xl:text-4xl font-bold">
-                What is Detour?
-              </h3>
-              <p className="text-gray-600 xl:text-gray-300 text-xl">
+              <h2 className="text-3xl xl:text-2xl font-bold">FAQ</h2>
+              <h3 className="text-xl xl:text-4xl font-bold">What is Detour?</h3>
+              <p className="text-gray-600 xl:text-detourPrimaryLight text-xl">
                 Join us for a weekend of workshops, shows, and more. Classes
                 will be led by some of the best instructors from around the
                 nation. We'll also have shows featuring local and national
@@ -107,21 +113,19 @@ export default function Detour() {
               </p>
             </div>
             <div className="flex flex-col space-y-1 ">
-              <h3 className="text-2xl xl:text-4xl font-bold">
+              <h3 className="text-xl xl:text-4xl font-bold">
                 Where will it be hosted?
               </h3>
-              <p className="text-gray-600 xl:text-gray-300 text-xl">
+              <p className="text-gray-600 xl:text-detourPrimaryLight text-xl">
                 Detour will be hosted at Carnegie Mellon University. Our address
                 is 5000 Forbes Ave, Pittsburgh, PA 15213.
               </p>
             </div>
             <div className="flex flex-col space-y-1">
-              <h3 className="text-2xl xl:text-4xl font-bold">
-                More Questions?
-              </h3>
+              <h3 className="text-xl xl:text-4xl font-bold">More Questions?</h3>
               {/* include mail link */}
 
-              <p className="text-gray-600 xl:text-gray-300 text-xl">
+              <p className="text-gray-600 xl:text-detourPrimaryLight text-xl">
                 Email{" "}
                 <a
                   href="mailto:anewkirk@andrew.cmu.edu"
