@@ -8,7 +8,7 @@ import { Oswald, Open_Sans } from "next/font/google";
 export const metadata: Metadata = {
   title: "Detour 2024",
   description:
-    "We're bringing the best of improv to Pittsburgh. Join us for a weekend of workshops, shows, and more April 5th-6th, 2024.",
+    "We're bringing the best of improv to Pittsburgh. Join us for a weekend of workshops, shows, and more March 29th-30th, 2024.",
 };
 
 const oswald = Oswald({ subsets: ["latin"], weight: "variable" });
