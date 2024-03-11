@@ -26,7 +26,7 @@ export default function Detour() {
             {/* <div className="w-fit px-2 py-1 rounded-xl bg-yellow-500/20 text-gray-700 xl:text-gray-200 text-lg mt-8 ring-[1px] ring-yellow-400">
               April 29-30, 2024
             </div> */}
-            <div className="h-[18vh]" />
+            <div className="h-[16vh]" />
 
             <div className="text-center">
               <h1
