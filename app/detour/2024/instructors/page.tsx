@@ -15,9 +15,9 @@ export default function Instructors() {
         Meet The Instructors
       </h1>
       <div className="max-w-5xl mx-auto flex flex-row h-[8px]">
-        <div className="bg-detourPrimaryYellow w-1/3" />
-        <div className="bg-detourPrimaryLight w-1/3" />
-        <div className="bg-detourPrimaryBlue w-1/3"></div>
+        <div className="bg-detourPrimaryYellow w-1/6" />
+        <div className="bg-detourPrimaryLight w-4/6" />
+        <div className="bg-detourPrimaryBlue w-1/6"></div>
       </div>
       <div className="flex flex-col space-y-3 max-w-5xl mx-auto prose-xl">
         <div className="flex flex-col space-y-2 mt-2">
