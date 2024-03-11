@@ -16,9 +16,9 @@ const open_sans = Open_Sans({ subsets: ["latin"], weight: "variable" });
 
 export default function Detour() {
   return (
-    <div className={`xl:bg-detourPrimaryDark -mt-4 ${open_sans.className}`}>
+    <div className={`bg-gradient-to-b from-detourPrimaryDark to-detourPrimaryBlue pb-8 -mb-64 xl:-mb-24 -mt-4 ${open_sans.className}`}>
       <div className="flex flex-col xl:flex-row xl:h-[92vh]">
-        <div className="xl:w-[50%] xl:bg-gradient-to-b from-detourPrimaryDark to-detourPrimaryBlue xl:h-full px-4 relative">
+        <div className="xl:w-[50%]  xl:h-full px-4 relative">
           {/* <div className="w-fit px-2 py-1 rounded-xl bg-yellow-500/20 text-gray-700 xl:text-gray-200 text-sm ml-8 mt-8 ring-[1px] ring-yellow-400">
           March 29-30, 2024
         </div> */}
@@ -30,29 +30,24 @@ export default function Detour() {
 
             <div className="text-center">
               <h1
-                className={`text-9xl font-bold xl:text-white ${oswald.className}`}
+                className={`text-8xl xl:text-9xl font-bold text-white ${oswald.className}`}
               >
                 Detour
               </h1>
               <h2 className="text-4xl text-detourPrimaryYellow">
-                March 29th-30th, 2024
+                
               </h2>
               <p className="text-4xl text-detourPrimaryLight">
                 We're bringing the best of improv to Pittsburgh.
               </p>
             </div>
 
-            <div className="mx-auto relative w-fit py-1 px-1 rounded-xl text-gray-700 xl:text-gray-200 text-sm mt-8 ring-[1px] ring-yellow-400 mx-auto transition-colors duration-300 hover:bg-yellow-500/20 ">
-              <a
-                href="https://forms.gle/fuEVXt5XgAavptua9"
-                target="_blank"
-                rel="noopener noreferrer"
-                className=""
-              >
+            <div className="mx-auto relative w-fit py-1 px-1 rounded-xl xl:text-gray-200 text-sm mt-6 ring-[1px] ring-yellow-400 mx-auto transition-colors duration-300 hover:bg-yellow-500/20 ">
+   
                 <p className="hover:cursor-pointer text-detourPrimaryYellow text-2xl">
-                  Apply to Participate
+                 March 29th-30th, 2024
                 </p>
-              </a>
+     
             </div>
           </div>
           <div className="flex flex-col space-y-2 mt-3 ml-4">
@@ -101,11 +96,11 @@ export default function Detour() {
           {/* <CountdownTimer date="2024-03-29" /> */}
           <div className="h-[4vh]" />
 
-          <div className="space-y-3 xl:text-white mb-8 xl:mb-2 xl:px-2">
+          <div className="space-y-3 text-white mb-8 xl:mb-2 xl:px-2">
             <div className="flex flex-col space-y-1 ">
               <h2 className="text-3xl xl:text-2xl font-bold">FAQ</h2>
               <h3 className="text-xl xl:text-4xl font-bold">What is Detour?</h3>
-              <p className="text-gray-600 xl:text-detourPrimaryLight text-xl">
+              <p className="text-detourPrimaryLight text-xl">
                 Join us for a weekend of workshops, shows, and more. Classes
                 will be led by some of the best instructors from around the
                 nation. We'll also have shows featuring local and national
@@ -116,7 +111,7 @@ export default function Detour() {
               <h3 className="text-xl xl:text-4xl font-bold">
                 Where will it be hosted?
               </h3>
-              <p className="text-gray-600 xl:text-detourPrimaryLight text-xl">
+              <p className="text-detourPrimaryLight text-xl">
                 Detour will be hosted at Carnegie Mellon University. Our address
                 is 5000 Forbes Ave, Pittsburgh, PA 15213.
               </p>
@@ -125,7 +120,7 @@ export default function Detour() {
               <h3 className="text-xl xl:text-4xl font-bold">More Questions?</h3>
               {/* include mail link */}
 
-              <p className="text-gray-600 xl:text-detourPrimaryLight text-xl">
+              <p className="text-detourPrimaryLight text-xl">
                 Email{" "}
                 <a
                   href="mailto:anewkirk@andrew.cmu.edu"
