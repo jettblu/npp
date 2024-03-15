@@ -16,8 +16,10 @@ const open_sans = Open_Sans({ subsets: ["latin"], weight: "variable" });
 
 export default function Detour() {
   return (
-    <div className={`bg-gradient-to-b from-detourPrimaryDark to-detourPrimaryBlue pb-8 -mb-64 xl:-mb-24 -mt-4 ${open_sans.className}`}>
-      <div className="flex flex-col xl:flex-row xl:h-[92vh]">
+    <div
+      className={`bg-gradient-to-b from-detourPrimaryLight to-detourPrimaryYellow pb-8 -mb-64 xl:-mb-32 -mt-4 ${open_sans.className}`}
+    >
+      <div className="flex flex-col xl:flex-row xl:h-[93vh]">
         <div className="xl:w-[50%]  xl:h-full px-4 relative">
           {/* <div className="w-fit px-2 py-1 rounded-xl bg-yellow-500/20 text-gray-700 xl:text-gray-200 text-sm ml-8 mt-8 ring-[1px] ring-yellow-400">
           March 29-30, 2024
@@ -30,28 +32,24 @@ export default function Detour() {
 
             <div className="text-center">
               <h1
-                className={`text-8xl xl:text-9xl font-bold text-white ${oswald.className}`}
+                className={`text-8xl xl:text-9xl font-bold text-detourPrimaryDark tracking-widest ${oswald.className}`}
               >
-                Detour
+                DETOUR
               </h1>
-              <h2 className="text-4xl text-detourPrimaryYellow">
-                
-              </h2>
-              <p className="text-4xl text-detourPrimaryLight">
+              {/* <h2 className="text-4xl text-detourPrimaryYellow"></h2> */}
+              <p className="text-4xl text-detourSecondaryDark">
                 We're bringing the best of improv to Pittsburgh.
               </p>
             </div>
 
-            <div className="mx-auto relative w-fit py-1 px-1 rounded-xl xl:text-gray-200 text-sm mt-6 ring-[1px] ring-yellow-400 mx-auto transition-colors duration-300 hover:bg-yellow-500/20 ">
-   
-                <p className="hover:cursor-pointer text-detourPrimaryYellow text-2xl">
-                 March 29th-30th, 2024
-                </p>
-     
+            <div className="mx-auto relative w-fit py-1 px-1 rounded-xl xl:text-gray-200 text-sm mt-6 ring-[1px] ring-detourSecondaryBlue1 mx-auto transition-colors duration-300 hover:bg-yellow-500/20 ">
+              <p className="hover:cursor-pointer text-detourSecondaryBlue2 text-2xl">
+                March 29th-30th, 2024
+              </p>
             </div>
           </div>
           <div className="flex flex-col space-y-2 mt-3 ml-4">
-            <p className="text-lg text-detourPrimaryLight">With Classes By</p>
+            <p className="text-lg text-detourPrimaryDark">With Classes By</p>
             <Link href="/detour/2024/instructors">
               <div className="flex flex-row w-fit hover:scale-105 duration-300">
                 <Image
@@ -91,16 +89,19 @@ export default function Detour() {
                 />
               </div>
             </Link>
+            <Link href="/detour/2024/instructors">
+              <p className="text-lg text-detourSecondaryBlue2">Learn More</p>
+            </Link>
           </div>
 
           {/* <CountdownTimer date="2024-03-29" /> */}
           <div className="h-[4vh]" />
 
-          <div className="space-y-3 text-white mb-8 xl:mb-2 xl:px-2">
+          <div className="space-y-3 text-detourPrimaryDark mb-8 xl:mb-2 xl:px-2">
             <div className="flex flex-col space-y-1 ">
               <h2 className="text-3xl xl:text-2xl font-bold">FAQ</h2>
               <h3 className="text-xl xl:text-4xl font-bold">What is Detour?</h3>
-              <p className="text-detourPrimaryLight text-xl">
+              <p className="text-detourSecondaryDark text-xl">
                 Join us for a weekend of workshops, shows, and more. Classes
                 will be led by some of the best instructors from around the
                 nation. We'll also have shows featuring local and national
@@ -111,7 +112,7 @@ export default function Detour() {
               <h3 className="text-xl xl:text-4xl font-bold">
                 Where will it be hosted?
               </h3>
-              <p className="text-detourPrimaryLight text-xl">
+              <p className="text-detourSecondaryDark text-xl">
                 Detour will be hosted at Carnegie Mellon University. Our address
                 is 5000 Forbes Ave, Pittsburgh, PA 15213.
               </p>
@@ -120,11 +121,11 @@ export default function Detour() {
               <h3 className="text-xl xl:text-4xl font-bold">More Questions?</h3>
               {/* include mail link */}
 
-              <p className="text-detourPrimaryLight text-xl">
+              <p className="text-detourSecondaryDark text-xl">
                 Email{" "}
                 <a
                   href="mailto:anewkirk@andrew.cmu.edu"
-                  className="hover:cursor-pointer hover:font-semibold text-yellow-400"
+                  className="hover:cursor-pointer hover:font-semibold text-detourSecondaryBlue2"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -133,7 +134,7 @@ export default function Detour() {
                 or{" "}
                 <a
                   href="mailto:satao@andrew.cmu.edu"
-                  className="hover:cursor-pointer hover:font-semibold text-yellow-400"
+                  className="hover:cursor-pointer hover:font-semibold text-detourSecondaryBlue2"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -144,7 +145,7 @@ export default function Detour() {
             </div>
           </div>
         </div>
-        <div className="xl:w-[50%] xl:h-full h-[80vh] px-2 xl:px-0 relative overflow-hidden">
+        <div className="xl:w-[50%] xl:h-[93vh] h-[80vh] px-2 xl:px-0 relative overflow-hidden">
           <Splash />
         </div>
       </div>
