@@ -1,7 +1,16 @@
 import { IShow } from "./models";
 
 export const nppShows: IShow[] = [
-   {
+  {
+    name: "Show of the Year",
+    photoPath: "/shows/spring24/patrick.jpg",
+    description:
+      "The show we've all been waiting for . Named in honor of the honorific knock your socks of silly, sassy, and snazzy Patrick.",
+    date: "2024-3-15",
+    location: "Studio Theater",
+    time: "8pm",
+  },
+  {
     name: "Roman ",
     photoPath: "/shows/spring24/Roman.jpg",
     description:
@@ -9,17 +18,17 @@ export const nppShows: IShow[] = [
     date: "2024-2-23",
     location: "Porter 100",
     time: "8pm",
-   },
-   {
-    name:"Secret Admirer",
+  },
+  {
+    name: "Secret Admirer",
     photoPath: "/shows/spring24/Admirer.jpg",
     description:
       "Love is in the air and your secret admirer is in the audience. Come find out who it is!",
     date: "2024-2-16",
     location: "Studio Theater",
     time: "8pm",
-   },
-    {
+  },
+  {
     name: "Conspiracy",
     photoPath: "/shows/spring24/Conspiracy.jpg",
     description:
