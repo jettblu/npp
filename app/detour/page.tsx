@@ -32,7 +32,7 @@ export default function Detour() {
 
             <div className="text-center">
               <h1
-                className={`text-8xl xl:text-9xl font-bold text-detourPrimaryDark tracking-widest ${oswald.className}`}
+                className={`text-8xl xl:text-9xl text-center font-bold text-detourPrimaryDark xl:tracking-widest ${oswald.className}`}
               >
                 DETOUR
               </h1>
