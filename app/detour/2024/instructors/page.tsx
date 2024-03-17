@@ -7,20 +7,18 @@ const open_sans = Open_Sans({ subsets: ["latin"], weight: "variable" });
 export default function Instructors() {
   return (
     <div
-      className={`bg-detourPrimaryDark text-white min-h-[100vh] -mt-4 -mb-8 pb-4 px-2 ${open_sans.className}`}
+      className={`bg-detourPrimaryLight min-h-[100vh] -mt-4 -mb-8 pb-4 px-2 ${open_sans.className}`}
     >
       <h1
-        className={`text-6xl text-left font-bold text-detourPrimaryYellow max-w-5xl mx-auto ${oswald.className}`}
+        className={`text-6xl text-left font-bold text-detourSecondaryDark max-w-5xl mx-auto ${oswald.className}`}
       >
         Meet The Instructors
       </h1>
       <div className="max-w-5xl mx-auto flex flex-row h-[8px]">
-        <div className="bg-detourPrimaryYellow w-1/6" />
-        <div className="bg-detourPrimaryLight w-4/6" />
-        <div className="bg-detourPrimaryBlue w-1/6"></div>
+        <div className="bg-detourPrimaryYellow w-full" />
       </div>
-      <div className="flex flex-col space-y-3 max-w-5xl mx-auto prose-xl">
-        <div className="flex flex-col space-y-2 mt-2">
+      <div className="flex flex-col space-y-3 max-w-5xl mx-auto prose-xl text-detourPrimaryDark">
+        <div className="flex flex-col space-y-2 mt-2 text-detourPrimaryDark">
           <Image
             src="/detour/2024/instructor headshots/DC Headshot.jpg"
             width={100}
@@ -28,8 +26,10 @@ export default function Instructors() {
             alt="David Charles"
             className={`rounded-md h-64 w-64 object-cover`}
           />
-          <div className="flex flex-col text-gray-200">
-            <h1 className="text-4xl font-bold text-white">David Charles</h1>
+          <div className="flex flex-col">
+            <h1 className="text-4xl font-bold text-detourSecondaryBlue">
+              David Charles
+            </h1>
             <p className="">
               David Charles, PhD, works as a professional improvisational
               practitioner, deviser, author, and improv scholar. A New Zealander
@@ -70,8 +70,10 @@ export default function Instructors() {
             alt="Fred Brown"
             className={`rounded-md h-64 w-64 object-cover`}
           />
-          <div className="flex flex-col space-y-1 text-gray-200">
-            <h1 className="text-4xl font-bold text-white">Fred Brown</h1>
+          <div className="flex flex-col space-y-1">
+            <h1 className="text-4xl font-bold text-detourSecondaryBlue">
+              Fred Brown
+            </h1>
             <p className="">
               Fred Brown graduated from the Pig Iron School / University of the
               Arts in Philadelphia with an MFA in Devised Performance. Prior to
@@ -102,8 +104,10 @@ export default function Instructors() {
             alt="Jonathan Pitts"
             className={`rounded-md h-64 w-64 object-cover`}
           />
-          <div className="flex flex-col space-y-1 text-gray-200">
-            <h1 className="text-4xl font-bold text-white">Jonathan Pitts</h1>
+          <div className="flex flex-col space-y-1">
+            <h1 className="text-4xl font-bold text-detourSecondaryBlue">
+              Jonathan Pitts
+            </h1>
             <p className="">
               Jonathan Pitts is an award-winning international improv theatre
               artist and storyteller. He's performed and/or taught in 26
@@ -138,8 +142,10 @@ export default function Instructors() {
             alt="Ryan Goodman"
             className={`rounded-md h-64 w-64 object-cover`}
           />
-          <div className="flex flex-col space-y-1 text-gray-200">
-            <h1 className="text-4xl font-bold text-white">Ryan Goodman</h1>
+          <div className="flex flex-col space-y-1">
+            <h1 className="text-4xl font-bold text-detourSecondaryBlue">
+              Ryan Goodman
+            </h1>
             <p className="">
               Ryan Goodwin is a 28-year old, Orlando-based musician whose
               current credits include music director & keyboardist for bands
@@ -165,8 +171,10 @@ export default function Instructors() {
             alt="Shaun Laundry"
             className={`rounded-md h-64 w-64 object-cover`}
           />
-          <div className="flex flex-col space-y-1 text-gray-200">
-            <h1 className="text-4xl font-bold text-white">Shaun laundry</h1>
+          <div className="flex flex-col space-y-1">
+            <h1 className="text-4xl font-bold text-detourSecondaryBlue">
+              Shaun laundry
+            </h1>
             <p className="">
               Shaun Landry founded The Ledge Theatre in Los Angeles, which does
               improvisation, sketch, poetry, and storytelling and is more geared
