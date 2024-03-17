@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function SocialFooter() {
   return (
-    <div className="fixed bottom-0 md:py-2 py-4 w-full bg-gray-400/10 md:bg-gray-500/0">
+    <div className="fixed bottom-0 md:py-2 py-4 w-full bg-white/80">
       <div className="float-right mr-8">
         <div className="flex flex-row space-x-3 md:space-x-6 ">
           {/* show email icon */}
