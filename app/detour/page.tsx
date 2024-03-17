@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import Splash from "../../components/detour/SplashImage";
 import Link from "next/link";
 import { Oswald, Open_Sans } from "next/font/google";
+import ScheduleList from "../../components/detour/ScheduleList";
 
 export const metadata: Metadata = {
   title: "Detour 2024",
@@ -17,7 +18,7 @@ const open_sans = Open_Sans({ subsets: ["latin"], weight: "variable" });
 export default function Detour() {
   return (
     <div
-      className={`bg-gradient-to-b from-detourPrimaryLight to-detourPrimaryYellow pb-32 xl:pb-0 h-full -mb-64 xl:-mb-32 -mt-4 ${open_sans.className}`}
+      className={`bg-gradient-to-b bg-detourPrimaryLight pb-32 xl:pb-0 h-full -mb-64 xl:-mb-32 -mt-4 ${open_sans.className}`}
     >
       <div className="flex flex-col xl:flex-row h-full">
         <div className="xl:w-[50%]  xl:h-full px-4 relative">
@@ -25,9 +26,6 @@ export default function Detour() {
           March 29-30, 2024
         </div> */}
           <div>
-            {/* <div className="w-fit px-2 py-1 rounded-xl bg-yellow-500/20 text-gray-700 xl:text-gray-200 text-lg mt-8 ring-[1px] ring-yellow-400">
-              April 29-30, 2024
-            </div> */}
             <div className="h-[16vh]" />
 
             <div className="text-center">
@@ -41,12 +39,18 @@ export default function Detour() {
                 We're bringing the best of improv to Pittsburgh.
               </p>
             </div>
-
-            <div className="mx-auto relative w-fit py-1 px-1 rounded-xl xl:text-gray-200 text-sm mt-6 ring-[1px] ring-detourSecondaryBlue1 mx-auto transition-colors duration-300 hover:bg-yellow-500/20 ">
-              <p className="hover:cursor-pointer text-detourSecondaryBlue2 text-2xl">
-                March 29th-30th, 2024
-              </p>
-            </div>
+            <CountdownTimer date="2024-03-29" />
+            <a
+              href="https://cglink.me/2c1/r1929023"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="mx-auto relative w-fit py-1 px-1 rounded-xl xl:text-gray-200 text-sm mt-6 ring-[1px] ring-detourSecondaryBlue1 mx-auto transition-colors duration-300 hover:bg-yellow-500/20 ">
+                <p className="hover:cursor-pointer text-detourSecondaryBlue2 text-2xl">
+                  Buy Tickets Now
+                </p>
+              </div>
+            </a>
           </div>
           <div className="flex flex-col space-y-2 mt-3 ml-4">
             <p className="text-lg text-detourPrimaryDark">With Classes By</p>
@@ -93,13 +97,38 @@ export default function Detour() {
               <p className="text-lg text-detourSecondaryBlue2">Learn More</p>
             </Link>
           </div>
-
-          {/* <CountdownTimer date="2024-03-29" /> */}
+          <div className="h-[3vh] xl:h-[4vh]" />
+          <p className="text-detourSecondaryDark text-xl">
+            Join us for a weekend of workshops, shows, and more. Classes will be
+            led by some of the best instructors from around the nation. We'll
+            also have shows featuring local and national talent. See below for
+            more info.
+          </p>
+          <div className="mx-auto w-fit flex flex-row space-x-4 text-3xl mt-3 xl:mt-32">
+            <div className="w-12 h-12 rounded-full animate-bounce border border-2 border-detourSecondaryBlue2 text-xl text-center text-detourSecondaryBlue2 pt-2">
+              ↓
+            </div>
+          </div>
           <div className="h-[4vh]" />
-
-          <div className="space-y-3 text-detourPrimaryDark mb-8 xl:mb-2 xl:px-2">
+        </div>
+        <div className="xl:w-[50%] xl:h-[93vh] h-[80vh] px-2 xl:px-0 relative overflow-hidden">
+          <Splash />
+        </div>
+      </div>
+      <div
+        className="flex flex-col xl:flex-row xl:h-[93vh] w-full px-4 xl:px-0 "
+        id="faq"
+      >
+        <div className="xl:w-1/2 xl:bg-detourPrimaryBlue">
+          <h3
+            className={`${open_sans.className} text-3xl xl:text-7xl font-bold xl:text-center mt-12 xl:mt-[35vh] xl:text-detourPrimaryLight mb-3`}
+          >
+            FAQ
+          </h3>
+        </div>
+        <div className="xl:h-full xl:w-1/2">
+          <div className=" space-y-3 text-detourPrimaryDark mb-8 xl:mb-2 xl:px-2 xl:mt-[20vh]">
             <div className="flex flex-col space-y-1 ">
-              <h2 className="text-3xl xl:text-2xl font-bold">FAQ</h2>
               <h3 className="text-xl xl:text-4xl font-bold">What is Detour?</h3>
               <p className="text-detourSecondaryDark text-xl">
                 Join us for a weekend of workshops, shows, and more. Classes
@@ -145,8 +174,22 @@ export default function Detour() {
             </div>
           </div>
         </div>
-        <div className="xl:w-[50%] xl:h-[93vh] h-[80vh] px-2 xl:px-0 relative overflow-hidden">
-          <Splash />
+      </div>
+      <div
+        className="flex flex-col xl:flex-row h-[93vh] w-full px-4 xl:px-0"
+        id="schedule"
+      >
+        <div className="xl:w-1/2 xl:bg-detourPrimaryBlue2">
+          <h3
+            className={`${open_sans.className} text-3xl xl:text-7xl font-bold xl:text-center mt-12 xl:mt-[35vh] mb-3`}
+          >
+            Schedule
+          </h3>
+        </div>
+        <div className="h-full xl:w-1/2">
+          <div className=" space-y-3 text-detourPrimaryDark mb-8 xl:mb-2 xl:px-2 xl:mt-[20vh] ">
+            <ScheduleList />
+          </div>
         </div>
       </div>
     </div>
