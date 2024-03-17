@@ -57,6 +57,7 @@ const MainPageSplash: NextPage = () => {
             </Link>
           </div>
         </div>
+        <div className="h-12" />
       </main>
       <SocialFooter />
     </div>
