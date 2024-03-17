@@ -73,23 +73,24 @@ export default function Instructors() {
           <div className="flex flex-col space-y-1 text-gray-200">
             <h1 className="text-4xl font-bold text-white">Fred Brown</h1>
             <p className="">
-              I graduated from the Pig Iron School / University of the Arts in
-              Philadelphia with an MFA in Devised Performance. Before that, I
-              was a Latin and Greek teacher with an undergraduate degree in
-              Classical Philology from Harvard University. I have performed,
-              directed, and coached improv comedy since 2013.
-            </p>
-            <p>
-              I have performed at improv festivals in the US and Canada. I
-              performed weekly improv comedy shows in Philadelphia for six
-              years, mostly with the teams The Future and Dream Tank. I taught
-              improv at the Philly Improv Theater to beginners looking to expand
-              their horizons and advanced improvisers looking to hone their
-              craft.
-            </p>
-            <p>
-              I was once paid to recite Duchamp’s manifesto in a men’s bathroom
-              at the Philadelphia Museum of Art.
+              Fred Brown graduated from the Pig Iron School / University of the
+              Arts in Philadelphia with an MFA in Devised Performance. Prior to
+              that, he worked as a Latin and Greek teacher, holding an
+              undergraduate degree in Classical Philology from Harvard
+              University. He has been involved in performing, directing, and
+              coaching improv comedy since 2013. He has participated in improv
+              festivals across the US and Canada.
+              <p>
+                For six years, he was part of weekly improv comedy shows in
+                Philadelphia, primarily with the teams The Future and Dream
+                Tank. He also instructed improv at the Philly Improv Theater,
+                catering to beginners seeking to broaden their skills and
+                advanced improvisers aiming to refine their craft.
+              </p>
+              <p>
+                At one point, he was hired to recite Duchamp’s manifesto in a
+                men’s bathroom at the Philadelphia Museum of Art.
+              </p>
             </p>
           </div>
         </div>
