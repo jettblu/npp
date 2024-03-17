@@ -5,7 +5,7 @@ export const nppShows: IShow[] = [
     name: "Show of the Year",
     photoPath: "/shows/spring24/patrick.jpg",
     description:
-      "The show we've all been waiting for . Named in honor of the honorific knock your socks of silly, sassy, and snazzy Patrick.",
+      "The show we've all been waiting for. Named in honor of the honorific knock your socks of silly, sassy, and snazzy Patrick.",
     date: "2024-3-15",
     location: "Studio Theater",
     time: "8pm",
