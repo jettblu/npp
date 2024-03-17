@@ -17,9 +17,9 @@ const open_sans = Open_Sans({ subsets: ["latin"], weight: "variable" });
 export default function Detour() {
   return (
     <div
-      className={`bg-gradient-to-b from-detourPrimaryLight to-detourPrimaryYellow pb-8 -mb-64 xl:-mb-32 -mt-4 ${open_sans.className}`}
+      className={`bg-gradient-to-b from-detourPrimaryLight to-detourPrimaryYellow pb-32 xl:pb-0 h-full -mb-64 xl:-mb-32 -mt-4 ${open_sans.className}`}
     >
-      <div className="flex flex-col xl:flex-row xl:h-[93vh]">
+      <div className="flex flex-col xl:flex-row h-full">
         <div className="xl:w-[50%]  xl:h-full px-4 relative">
           {/* <div className="w-fit px-2 py-1 rounded-xl bg-yellow-500/20 text-gray-700 xl:text-gray-200 text-sm ml-8 mt-8 ring-[1px] ring-yellow-400">
           March 29-30, 2024
