@@ -38,45 +38,108 @@ export default function ScheduleList() {
         <tbody className="">
           <tr>
             <td className={`${rowHeaderClassName}`}>
-              Scenework the Chicago Way
+              <a
+                href="https://tartanconnect.cmu.edu/sns/rsvp_boot?id=1929024"
+                className="hover:cursor-pointer"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Scenework the Chicago Way
+              </a>
             </td>
             <td>Danforth Conference</td>
             <td>Jonathan Pitts</td>
             <td>9 AM</td>
           </tr>
+
           <tr className={`${rowClassName}`}>
-            <td className={`${rowHeaderClassName}`}>Poetic Improvisation</td>
+            <td className={`${rowHeaderClassName}`}>
+              {" "}
+              <a
+                href="https://tartanconnect.cmu.edu/sns/rsvp_boot?id=1929031"
+                className="hover:cursor-pointer"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Poetic Improvisation
+              </a>
+            </td>
             <td>Dowd</td>
             <td>Shaun Landry</td>
             <td>9 AM</td>
           </tr>
           <tr>
-            <td className={`${rowHeaderClassName}`}>Musical Improvisation</td>
+            <td className={`${rowHeaderClassName}`}>
+              {" "}
+              <a
+                href="https://tartanconnect.cmu.edu/sns/rsvp_boot?id=1929026"
+                className="hover:cursor-pointer"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Musical Improvisation
+              </a>
+            </td>
             <td>Simmons A</td>
             <td>David Charles</td>
             <td>9 AM</td>
           </tr>
           <tr className={`${rowClassName}`}>
-            <td className={`${rowHeaderClassName}`}>Character through Voice</td>
+            <td className={`${rowHeaderClassName}`}>
+              {" "}
+              <a
+                href="https://tartanconnect.cmu.edu/sns/rsvp_boot?id=1929033"
+                className="hover:cursor-pointer"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Character through Voice
+              </a>
+            </td>
             <td>Simmons B</td>
             <td>Fred Brown</td>
             <td>9 AM</td>
           </tr>
           <tr>
-            <td className={`${rowHeaderClassName}`}>Taking Care of the Now</td>
+            <td className={`${rowHeaderClassName}`}>
+              <a
+                href="https://tartanconnect.cmu.edu/sns/rsvp?id=1929029"
+                className="hover:cursor-pointer"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Taking Care of the Now
+              </a>
+            </td>
             <td>Danforth Conference</td>
             <td>Jonathan Pitts</td>
             <td>1 PM</td>
           </tr>
           <tr className={`${rowClassName}`}>
-            <td className={`${rowHeaderClassName}`}>Improv for Your Life</td>
+            <td className={`${rowHeaderClassName}`}>
+              <a
+                href="https://tartanconnect.cmu.edu/sns/rsvp?id=1929032"
+                className="hover:cursor-pointer"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Improv for Your Life
+              </a>
+            </td>
             <td>Dowd</td>
             <td>Shaun Landry</td>
             <td>1 PM</td>
           </tr>
           <tr>
             <td className={`${rowHeaderClassName}`}>
-              Short Form Improvisation
+              <a
+                href="https://tartanconnect.cmu.edu/sns/rsvp?id=1929029"
+                className="hover:cursor-pointer"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Short Form Improvisation
+              </a>
             </td>
             <td>Simmons A</td>
             <td>David Charles</td>
@@ -84,7 +147,14 @@ export default function ScheduleList() {
           </tr>
           <tr className={`${rowClassName}`}>
             <td className={`${rowHeaderClassName}`}>
-              Physicality and Environment
+              <a
+                href="https://tartanconnect.cmu.edu/sns/rsvp?id=1929034"
+                className="hover:cursor-pointer"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Physicality and Environment
+              </a>
             </td>
             <td>Simmons B</td>
             <td>Fred Brown</td>
