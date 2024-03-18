@@ -111,7 +111,7 @@ export default function Detour() {
           </div>
           <div className="h-[4vh]" />
         </div>
-        <div className="xl:w-[50%] xl:h-[93vh] h-[80vh] px-2 xl:px-0 relative overflow-hidden">
+        <div className="xl:w-[50%] xl:h-[93vh] h-[80vh] px-2 xl:px-0 relative overflow-hidden bg-rd-500">
           <Splash />
         </div>
       </div>
@@ -121,7 +121,7 @@ export default function Detour() {
       >
         <div className="xl:w-1/2 xl:bg-detourPrimaryBlue">
           <h3
-            className={`${open_sans.className} text-3xl xl:text-7xl font-bold xl:text-center mt-12 xl:mt-[35vh] xl:text-detourPrimaryLight mb-3`}
+            className={`${open_sans.className} text-3xl xl:text-7xl font-bold xl:text-center mt-12 xl:mt-[25vh] xl:text-detourPrimaryLight mb-3`}
           >
             FAQ
           </h3>
@@ -131,10 +131,43 @@ export default function Detour() {
             <div className="flex flex-col space-y-1 ">
               <h3 className="text-xl xl:text-4xl font-bold">What is Detour?</h3>
               <p className="text-detourSecondaryDark text-xl">
-                Join us for a weekend of workshops, shows, and more. Classes
-                will be led by some of the best instructors from around the
-                nation. We'll also have shows featuring local and national
-                talent. See below for more info.
+                Detour is a collegiate improv festival hosted by NPP at Carnegie
+                Mellon University. The festival includes a variety of workshop
+                topics and performances for everyone (even non-improvisers) to
+                enjoy.
+              </p>
+              <p className="text-detourSecondaryDark text-xl">
+                This is the fifth time we’ve hosted Detour, and we couldn’t be
+                more excited!
+              </p>
+            </div>
+            <div className="flex flex-col space-y-1 ">
+              <h3 className="text-xl xl:text-4xl font-bold">
+                How much does it cost?
+              </h3>
+              <p className="text-detourSecondaryDark text-xl">
+                The festival’s opening ceremony, performances, and workshops are
+                all completely <span className="font-semibold">free</span>!
+                Individual workshops are ticketed, and space is limited.
+              </p>
+            </div>
+
+            <div className="flex flex-col space-y-1 ">
+              <h3 className="text-xl xl:text-4xl font-bold">
+                Where can I sign up?
+              </h3>
+              <p className="text-detourSecondaryDark text-xl">
+                RSVP information for our opening ceremony/dinner, performances,
+                tickets for classes, etc. can be found{" "}
+                <a
+                  href="https://cglink.me/2c1/r1929023"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:cursor-pointer hover:font-semibold text-detourSecondaryBlue2"
+                >
+                  here
+                </a>
+                .
               </p>
             </div>
             <div className="flex flex-col space-y-1 ">
