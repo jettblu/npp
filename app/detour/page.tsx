@@ -20,8 +20,8 @@ export default function Detour() {
     <div
       className={`bg-gradient-to-b bg-detourPrimaryLight pb-32 xl:pb-0 h-full -mb-64 xl:-mb-32 -mt-4 ${open_sans.className}`}
     >
-      <div className="flex flex-col xl:flex-row h-full">
-        <div className="xl:w-[50%]  xl:h-full px-4 relative">
+      <div className="flex flex-col xl:flex-row">
+        <div className="xl:w-[50%] px-4 relative">
           {/* <div className="w-fit px-2 py-1 rounded-xl bg-yellow-500/20 text-gray-700 xl:text-gray-200 text-sm ml-8 mt-8 ring-[1px] ring-yellow-400">
           March 29-30, 2024
         </div> */}
@@ -109,15 +109,14 @@ export default function Detour() {
               ↓
             </div>
           </div>
-          <div className="h-[4vh]" />
         </div>
         <div className="xl:w-[50%] xl:h-[93vh] h-[80vh] px-2 xl:px-0 relative overflow-hidden bg-rd-500">
           <Splash />
         </div>
       </div>
       <div
-        className="flex flex-col xl:flex-row xl:h-[93vh] w-full px-4 xl:px-0 "
-        id="faq"
+        className="flex flex-col xl:flex-row xl:h-[93vh] w-full px-4 xl:px-0 mt-0 "
+
       >
         <div className="xl:w-1/2 xl:bg-detourPrimaryBlue">
           <h3
