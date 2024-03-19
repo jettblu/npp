@@ -45,8 +45,8 @@ export default function Detour() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <div className="mx-auto relative w-fit py-1 px-1 rounded-xl xl:text-gray-200 text-sm mt-6 ring-[1px] ring-detourSecondaryBlue1 mx-auto transition-colors duration-300 hover:bg-yellow-500/20 ">
-                <p className="hover:cursor-pointer text-detourSecondaryBlue2 text-2xl">
+              <div className="mx-auto relative w-fit py-1 px-1 rounded-xl xl:text-gray-200 mt-6 ring-[1px] ring-detourSecondaryBlue1 mx-auto transition-colors duration-300 hover:bg-yellow-500/20 ">
+                <p className="hover:cursor-pointer text-detourSecondaryBlue2 text-3xl">
                   Buy Tickets Now
                 </p>
               </div>
