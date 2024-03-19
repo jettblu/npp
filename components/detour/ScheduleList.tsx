@@ -162,7 +162,7 @@ export default function ScheduleList() {
           </tr>
           <tr>
             <td className={`${rowHeaderClassName}`}>University Showcase</td>
-            <td>TBD</td>
+            <td>Simmons B</td>
             <td></td>
             <td>4:30 PM</td>
           </tr>
