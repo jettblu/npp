@@ -1,5 +1,5 @@
 export default function ScheduleList() {
-  const rowClassName = "bg-gray-400/10";
+  const rowClassName = "bg-gray-400/10 w-full";
   const rowHeaderClassName = "font-semibold";
   return (
     <div>
@@ -46,6 +46,9 @@ export default function ScheduleList() {
               >
                 Scenework the Chicago Way
               </a>
+              <p className="text-detourSecondaryDark font-normal">
+                Prioritizing character and relationships.
+              </p>
             </td>
             <td>Danforth Conference</td>
             <td>Jonathan Pitts</td>
@@ -62,6 +65,9 @@ export default function ScheduleList() {
                 rel="noopener noreferrer"
               >
                 Poetic Improvisation
+                <p className="text-detourSecondaryDark font-normal">
+                  The power and presence of poetry.
+                </p>
               </a>
             </td>
             <td>Dowd</td>
@@ -78,6 +84,9 @@ export default function ScheduleList() {
                 rel="noopener noreferrer"
               >
                 Musical Improvisation
+                <p className="text-detourSecondaryDark font-normal">
+                  The methods behind musical madness.
+                </p>
               </a>
             </td>
             <td>Simmons A</td>
@@ -86,7 +95,6 @@ export default function ScheduleList() {
           </tr>
           <tr className={`${rowClassName}`}>
             <td className={`${rowHeaderClassName}`}>
-              {" "}
               <a
                 href="https://tartanconnect.cmu.edu/sns/rsvp_boot?id=1929033"
                 className="hover:cursor-pointer"
@@ -95,6 +103,9 @@ export default function ScheduleList() {
               >
                 Character through Voice
               </a>
+              <p className="text-detourSecondaryDark font-normal">
+                Your voice says more than words.
+              </p>
             </td>
             <td>Simmons B</td>
             <td>Fred Brown</td>
@@ -110,6 +121,9 @@ export default function ScheduleList() {
               >
                 Taking Care of the Now
               </a>
+              <p className="text-detourSecondaryDark font-normal">
+                Establishing what's now to set up what's next.
+              </p>
             </td>
             <td>Danforth Conference</td>
             <td>Jonathan Pitts</td>
@@ -125,6 +139,9 @@ export default function ScheduleList() {
               >
                 Improv for Your Life
               </a>
+              <p className="text-detourSecondaryDark font-normal">
+                Improv for your life, not just the stage.
+              </p>
             </td>
             <td>Dowd</td>
             <td>Shaun Landry</td>
@@ -140,6 +157,9 @@ export default function ScheduleList() {
               >
                 Short Form Improvisation
               </a>
+              <p className="text-detourSecondaryDark font-normal">
+                Unlock gifts at the core of short-form canon.
+              </p>
             </td>
             <td>Simmons A</td>
             <td>David Charles</td>
@@ -155,6 +175,9 @@ export default function ScheduleList() {
               >
                 Physicality and Environment
               </a>
+              <p className="text-detourSecondaryDark font-normal">
+                Discover the magic of body and space.
+              </p>
             </td>
             <td>Simmons B</td>
             <td>Fred Brown</td>
