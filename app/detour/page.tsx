@@ -88,7 +88,7 @@ export default function Detour() {
                   src="/detour/2024/instructor headshots/SL Headshot.webp"
                   width={100}
                   height={100}
-                  alt="Shaun Laundry"
+                  alt="Shaun Landry"
                   className={`rounded-full h-12 w-12 object-cover -ml-2`}
                 />
               </div>

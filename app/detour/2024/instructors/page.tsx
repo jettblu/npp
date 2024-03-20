@@ -168,12 +168,12 @@ export default function Instructors() {
             src="/detour/2024/instructor headshots/SL Headshot.webp"
             width={100}
             height={100}
-            alt="Shaun Laundry"
+            alt="Shaun Landry"
             className={`rounded-md h-64 w-64 object-cover`}
           />
           <div className="flex flex-col space-y-1">
             <h1 className="text-4xl font-bold text-detourSecondaryBlue">
-              Shaun laundry
+              Shaun Landry
             </h1>
             <p className="">
               Shaun Landry founded The Ledge Theatre in Los Angeles, which does
