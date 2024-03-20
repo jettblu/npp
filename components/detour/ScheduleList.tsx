@@ -2,7 +2,7 @@ export default function ScheduleList() {
   const rowClassName = "bg-gray-400/10 w-full";
   const rowHeaderClassName = "font-semibold";
   return (
-    <div>
+    <div className="-mx-4 md:mx-auto bg-detourPrimaryLight px-2 pb-8 md:pb-0">
       <h2 className="text-2xl xl:text-2xl font-bold">Friday Schedule</h2>
       <table className="table-auto w-full text-md rounded border border-slate-500 rounded-xl mb-12">
         <thead className="bg-detourPrimaryBlue/10 text-left">
