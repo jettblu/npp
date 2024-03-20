@@ -94,7 +94,7 @@ export default function ScheduleList() {
               </p>
             </td>
             <td>Simmons A</td>
-            <td>David Charles</td>
+            <td className="">David Charles & Ryan Goodman</td>
             <td>9 AM</td>
           </tr>
           <tr className={`${rowClassName}`}>
@@ -154,7 +154,7 @@ export default function ScheduleList() {
           <tr>
             <td className={`${rowHeaderClassName}`}>
               <a
-                href="https://tartanconnect.cmu.edu/sns/rsvp?id=1929029"
+                href="https://tartanconnect.cmu.edu/sns/rsvp_boot?id=1929030"
                 className={`${linkClassName}`}
                 target="_blank"
                 rel="noopener noreferrer"
