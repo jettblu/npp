@@ -220,6 +220,7 @@ export default function Detour() {
             <ScheduleList />
           </div>
         </div>
+        <div className="xl:h-[6vh]" />
       </div>
     </div>
   );
