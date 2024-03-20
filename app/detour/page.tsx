@@ -216,7 +216,7 @@ export default function Detour() {
           </h3>
         </div>
         <div className="h-full xl:w-1/2">
-          <div className="space-y-3 text-detourPrimaryDark mb-8 xl:mb-2 xl:px-2 xl:mt-[10vh] ">
+          <div className="space-y-3 text-detourPrimaryDark mb-8 xl:mb-2 xl:px-2 xl:mt-[4vh] ">
             <ScheduleList />
           </div>
         </div>
