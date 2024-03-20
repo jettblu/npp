@@ -46,7 +46,7 @@ export default function Detour() {
               rel="noopener noreferrer"
             >
               <div className="mx-auto relative w-fit py-1 px-1 rounded-xl xl:text-gray-200 mt-6 ring-[1px] ring-detourSecondaryBlue1 mx-auto transition-colors duration-300 hover:bg-yellow-500/20 ">
-                <p className="hover:cursor-pointer text-detourSecondaryBlue2 text-3xl">
+                <p className="hover:cursor-pointer text-detourSecondaryBlue2 text-3xl animate-pulse">
                   Buy Tickets Now
                 </p>
               </div>
@@ -114,10 +114,7 @@ export default function Detour() {
           <Splash />
         </div>
       </div>
-      <div
-        className="flex flex-col xl:flex-row xl:h-[93vh] w-full px-4 xl:px-0 mt-0 "
-
-      >
+      <div className="flex flex-col xl:flex-row xl:h-[93vh] w-full px-4 xl:px-0 mt-0 ">
         <div className="xl:w-1/2 xl:bg-detourPrimaryBlue">
           <h3
             className={`${open_sans.className} text-3xl xl:text-7xl font-bold xl:text-center mt-12 xl:mt-[25vh] xl:text-detourPrimaryLight mb-3`}
@@ -219,7 +216,7 @@ export default function Detour() {
           </h3>
         </div>
         <div className="h-full xl:w-1/2">
-          <div className=" space-y-3 text-detourPrimaryDark mb-8 xl:mb-2 xl:px-2 xl:mt-[20vh] ">
+          <div className="space-y-3 text-detourPrimaryDark mb-8 xl:mb-2 xl:px-2 xl:mt-[16vh] ">
             <ScheduleList />
           </div>
         </div>
