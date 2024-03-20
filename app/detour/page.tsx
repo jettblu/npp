@@ -205,7 +205,7 @@ export default function Detour() {
         </div>
       </div>
       <div
-        className="flex flex-col xl:flex-row h-[93vh] w-full px-4 xl:px-0"
+        className="flex flex-col xl:flex-row h-[100vh] w-full px-4 xl:px-0"
         id="schedule"
       >
         <div className="xl:w-1/2 xl:bg-detourPrimaryBlue2">
