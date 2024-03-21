@@ -166,7 +166,7 @@ export default function ScheduleList() {
               </p>
             </td>
             <td>Simmons A</td>
-            <td>David Charles</td>
+            <td>David Charles & Ryan Goodman</td>
             <td>1 PM</td>
           </tr>
           <tr className={`${rowClassName}`}>
