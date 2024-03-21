@@ -114,7 +114,7 @@ export default function Detour() {
           <Splash />
         </div>
       </div>
-      <div className="flex flex-col xl:flex-row xl:h-[93vh] w-full px-4 xl:px-0 mt-0 ">
+      <div className="flex flex-col xl:flex-row xl:min-h-[93vh] w-full px-4 xl:px-0 mt-0 ">
         <div className="xl:w-1/2 xl:bg-detourPrimaryBlue">
           <h3
             className={`${open_sans.className} text-3xl xl:text-7xl font-bold xl:text-center mt-12 xl:mt-[25vh] xl:text-detourPrimaryLight mb-3`}
@@ -215,7 +215,7 @@ export default function Detour() {
             Schedule
           </h3>
         </div>
-        <div className="h-full xl:w-1/2">
+        <div className="xl:w-1/2">
           <div className="space-y-3 text-detourPrimaryDark mb-8 xl:mb-2 xl:px-2 xl:mt-[4vh] ">
             <ScheduleList />
           </div>
