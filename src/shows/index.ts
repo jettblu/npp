@@ -2,6 +2,22 @@ import { IShow } from "./models";
 
 export const nppShows: IShow[] = [
   {
+    name: "Casio Clue Show",
+    photoPath: "/shows/spring24/casio.jpg",
+    description: "Time is ticking. Can you solve the mystery before the casio clock strikes midnight?",
+    date: "5-1-24",
+    location: "Porter 100",
+    time: "9:15pm",
+  },
+  {
+    name: "Carnival Show",
+    photoPath: "/shows/spring24/truth or dare.jpg",
+    description: "The truth is we dare you to get silly with us at carnival show!",
+    date: "4-12-24",
+    location: "Doherty 2210",
+    time: "1pm",
+  },
+  {
     name: "Show of the Year",
     photoPath: "/shows/spring24/patrick.jpg",
     description:
