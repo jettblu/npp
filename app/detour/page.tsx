@@ -7,7 +7,7 @@ import { Oswald, Open_Sans } from "next/font/google";
 import ScheduleList from "../../components/detour/ScheduleList";
 
 export const metadata: Metadata = {
-  title: "Detour 2024",
+  title: "Detour 2025",
   description:
     "We're bringing the best of improv to Pittsburgh. Join us for a weekend of workshops, shows, and more March 29th-30th, 2024.",
 };
@@ -39,9 +39,9 @@ export default function Detour() {
                 We're bringing the best of improv to Pittsburgh.
               </p>
             </div>
-            <CountdownTimer date="2024-03-29" />
+            <CountdownTimer date="2025-03-15" />
             <a
-              href="https://cglink.me/2c1/r1929023"
+              href="https://tartanconnect.cmu.edu/sns/rsvp_boot?id=1929023"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -57,43 +57,36 @@ export default function Detour() {
             <Link href="/detour/2024/instructors">
               <div className="flex flex-row w-fit hover:scale-105 duration-300">
                 <Image
-                  src="/detour/2024/instructor headshots/DC Headshot.jpg"
+                  src="/detour/2025/instructor headshots/James Dugan.png"
                   width={100}
                   height={100}
-                  alt="David Charles"
+                  alt="James Dugan"
                   className={`rounded-full h-12 w-12 object-cover`}
                 />
                 <Image
-                  src="/detour/2024/instructor headshots/FB Headshot.jpg"
+                  src="/detour/2025/instructor headshots/Andi Sharavsky.png"
                   width={100}
                   height={100}
-                  alt="Fred Brown"
+                  alt="Andi Sharavsky"
                   className={`rounded-full h-12 w-12 object-cover -ml-2`}
                 />
                 <Image
-                  src="/detour/2024/instructor headshots/JP Headshot.jpg"
+                  src="/detour/2025/instructor headshots/David Yontz.png"
                   width={100}
                   height={100}
-                  alt="Jonathan Pitts"
+                  alt="David Yontz"
                   className={`rounded-full h-12 w-12 object-cover -ml-2`}
                 />
                 <Image
-                  src="/detour/2024/instructor headshots/RG Headshot.webp"
+                  src="/detour/2025/instructor headshots/Gretchen Eng.png"
                   width={100}
                   height={100}
-                  alt="Ryan Goodman"
-                  className={`rounded-full h-12 w-12 object-cover -ml-2`}
-                />
-                <Image
-                  src="/detour/2024/instructor headshots/SL Headshot.webp"
-                  width={100}
-                  height={100}
-                  alt="Shaun Landry"
+                  alt="Gretchen Eng"
                   className={`rounded-full h-12 w-12 object-cover -ml-2`}
                 />
               </div>
             </Link>
-            <Link href="/detour/2024/instructors">
+            <Link href="/detour/2025/instructors">
               <p className="text-lg text-detourSecondaryBlue2">Learn More</p>
             </Link>
           </div>
@@ -105,7 +98,7 @@ export default function Detour() {
             more info.
           </p>
           <div className="mx-auto w-fit flex flex-row space-x-4 text-3xl mt-3 xl:mt-32">
-            <div className="w-12 h-12 rounded-full animate-bounce border border-2 border-detourSecondaryBlue2 text-xl text-center text-detourSecondaryBlue2 pt-2">
+            <div className="w-12 h-12 rounded-full animate-bounce border-2 border-detourSecondaryBlue2 text-xl text-center text-detourSecondaryBlue2 pt-2">
               ↓
             </div>
           </div>
@@ -133,7 +126,7 @@ export default function Detour() {
                 enjoy.
               </p>
               <p className="text-detourSecondaryDark text-xl">
-                This is the fifth time we’ve hosted Detour, and we couldn’t be
+                This is the sixth time we’ve hosted Detour, and we couldn’t be
                 more excited!
               </p>
             </div>
@@ -156,7 +149,7 @@ export default function Detour() {
                 RSVP information for our opening ceremony/dinner, performances,
                 tickets for classes, etc. can be found{" "}
                 <a
-                  href="https://cglink.me/2c1/r1929023"
+                  href="https://tartanconnect.cmu.edu/sns/rsvp_boot?id=1929023"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:cursor-pointer hover:font-semibold text-detourSecondaryBlue2"
@@ -188,15 +181,6 @@ export default function Detour() {
                   rel="noopener noreferrer"
                 >
                   Alex Newkirk
-                </a>{" "}
-                or{" "}
-                <a
-                  href="mailto:satao@andrew.cmu.edu"
-                  className="hover:cursor-pointer hover:font-semibold text-detourSecondaryBlue2"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Stephen Tao
                 </a>
                 .
               </p>
@@ -204,7 +188,7 @@ export default function Detour() {
           </div>
         </div>
       </div>
-      <div
+      {/* <div
         className="flex flex-col xl:flex-row h-[100vh] w-full px-4 xl:px-0"
         id="schedule"
       >
@@ -221,7 +205,7 @@ export default function Detour() {
           </div>
         </div>
         <div className="xl:h-[6vh]" />
-      </div>
+      </div> */}
     </div>
   );
 }
